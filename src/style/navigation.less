@@ -1,0 +1,63 @@
+.top-bar {
+  background-color: @green;
+  height: @topbar-height;
+  position: relative;
+  .left-bar, .right-bar {
+    display: block;
+    float: left;
+  }
+  .left-bar {
+    width: 65%;
+  }
+  .right-bar {
+    width: 35%;
+  }
+  .app-header__item {
+    font-size: @fontsize-small;
+    color: white;
+    text-transform: uppercase;
+    line-height: @topbar-height;
+    display: inline-block;
+    padding: 0 20px;
+  }
+  .current-location {
+    font-size: @fontsize-small;
+    font-weight: 400;
+    span {
+      font-weight: 600;
+    }
+  }
+  .dropdown-toggle {
+    background-color: @dark-green;
+    cursor: pointer;
+    padding: 0 10px;
+    -webkit-box-shadow: inset 2px 0px 5px 0px rgba(0,0,0,0.15);
+    -moz-box-shadow: inset 2px 0px 5px 0px rgba(0,0,0,0.15);
+    box-shadow: inset 2px 0px 5px 0px rgba(0,0,0,0.15);
+    .network-counter {
+      .border-radius(8px);
+      color: @dark-green;
+      background-color: white;
+      display: inline-block;
+      padding: 0 8px;
+      line-height: 16px;
+      font-size: @fontsize-tiny;
+    }
+    &:after {
+      content: '';
+      display: inline-block;
+      .triangle-down (white, 4px);
+    }
+  }
+  .pill-button {
+    .border-radius(8px);
+    color: white;
+    text-decoration: none;
+    background-color: @dark-green;
+    padding: 0 8px;
+    line-height: 16px;
+    font-size: @fontsize-micro;
+    border-bottom: 1px solid #94c061;
+    border-right: 1px solid #94c061;
+  }
+}
