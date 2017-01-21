@@ -15,3 +15,11 @@
   border-width: @size @size 0 @size;
   border-color: @color transparent transparent transparent;
 }
+
+.triangle-right (@color: black, @size: 10px) {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: @size 0 @size @size;
+  border-color: transparent transparent transparent @color;
+}

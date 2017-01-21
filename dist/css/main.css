@@ -127,3 +127,97 @@ button {
   border-bottom: 1px solid #94c061;
   border-right: 1px solid #94c061;
 }
+.app-nav {
+  background-color: #1e1e1e;
+}
+.app-nav .primary-nav {
+  background-color: #1e1e1e;
+  height: 64px;
+  border-bottom: 1px solid #464646;
+}
+.app-nav .primary-nav .user-actions {
+  float: right;
+  height: 64px;
+}
+.app-nav .primary-nav .user-actions .user {
+  display: inline-block;
+  line-height: 64px;
+  vertical-align: middle;
+}
+.app-nav .primary-nav .user-actions .user .avatar {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  display: inline-block;
+  line-height: 64px;
+  vertical-align: middle;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  background-image: url('../media/avatar.png');
+  background-size: cover;
+}
+.app-nav .primary-nav .user-actions .user .username {
+  color: white;
+  display: inline-block;
+  padding: 0 15px;
+  line-height: 64px;
+  vertical-align: middle;
+}
+.app-nav .primary-nav .user-actions .settings {
+  display: inline-block;
+  line-height: 64px;
+  vertical-align: middle;
+  height: 64px;
+  width: 64px;
+  background-color: #292929;
+  border-bottom: 1px solid #464646;
+  border-left: 1px solid #464646;
+  cursor: pointer;
+  transition: background-color 0.4s;
+}
+.app-nav .primary-nav .user-actions .settings:after {
+  content: ' ';
+  display: inline-block;
+  vertical-align: middle;
+  width: 23px;
+  height: 23px;
+  background-size: contain;
+  background-image: url('../media/gear.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.app-nav .primary-nav .navigation-list {
+  float: left;
+}
+.app-nav .primary-nav .navigation-list ul li {
+  text-transform: uppercase;
+  color: white;
+  display: inline-block;
+  line-height: 64px;
+  vertical-align: middle;
+}
+.app-nav .primary-nav .navigation-list ul li a {
+  display: block;
+  height: 100%;
+  line-height: 64px;
+  padding: 0 20px;
+  position: relative;
+  color: white;
+}
+.app-nav .primary-nav .navigation-list ul li a:after {
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 4px 0 4px 4px;
+  border-color: transparent transparent transparent #565656;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -2px;
+}

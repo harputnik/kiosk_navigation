@@ -61,3 +61,92 @@
     border-right: 1px solid #94c061;
   }
 }
+
+
+.app-nav {
+  background-color: @coal;
+  .primary-nav {
+    background-color: @coal;
+    height: @midbar-height;
+    border-bottom: 1px solid @ash;
+    .user-actions {
+      float: right;
+      height: @midbar-height;
+      .user {
+        display: inline-block;
+        line-height: @midbar-height;
+        vertical-align: middle;
+        .avatar {
+          .border-radius(50%);
+          display: inline-block;
+          line-height: @midbar-height;
+          vertical-align: middle;
+          width: 40px;
+          height: 40px;
+          background-color: white;
+          background-image: url('../media/avatar.png');
+          background-size: cover;
+        }
+        .username {
+          color: white;
+          display: inline-block;
+          padding: 0 15px;
+          line-height: @midbar-height;
+          vertical-align: middle;
+        }
+      }
+      .settings {
+        display: inline-block;
+        line-height: @midbar-height;
+        vertical-align: middle;
+        height: @midbar-height;
+        width: @midbar-height;
+        background-color: @smoke;
+        border-bottom: 1px solid @ash;
+        border-left: 1px solid @ash;
+        cursor: pointer;
+        transition: background-color 0.4s;
+        &:after {
+          content: ' ';
+          display: inline-block;
+          vertical-align: middle;
+          width: 23px;
+          height: 23px;
+          background-size: contain;
+          background-image: url('../media/gear.png');
+          background-repeat: no-repeat;
+          background-position: center center;
+        }
+      }
+    }
+    .navigation-list {
+      float: left;
+      ul {
+        li {
+          text-transform: uppercase;
+          color: white;
+          display: inline-block;
+          line-height: @midbar-height;
+          vertical-align: middle;
+          a {
+            display: block;
+            height: 100%;
+            line-height: @midbar-height;
+            padding: 0 20px;
+            position: relative;
+            color: white;
+            &:after {
+              content: '';
+              display: inline-block;
+              .triangle-right(@dust, 4px);
+              position: absolute;
+              right: 0;
+              top: 50%;
+              margin-top: -2px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
