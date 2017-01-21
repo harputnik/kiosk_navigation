@@ -6,59 +6,85 @@
     <link rel="stylesheet" href="dist/css/main.css">
   </head>
   <body>
-    <header class="app-header">
-      <div class="top-bar">
-        <div class="clear">
-          <div class="left-align left-bar">
-            <h1 class="current-location app-header__item">social bicycles / <span>kiosk backend</span></h1>
-            <button class="dropdown-toggle app-header__item kiosks-dropdown">
-              network name <span class="network-counter">24</span>
-            </button>
+    <div class="wrapper">
+      <header class="app-header">
+        <div class="top-bar">
+          <div class="clear">
+            <div class="left-align left-bar">
+              <h1 class="current-location app-header__item">social bicycles / <span>kiosk backend</span></h1>
+              <button class="dropdown-toggle app-header__item kiosks-dropdown">
+                network name <span class="network-counter">24</span>
+              </button>
+            </div>
+            <div class="right-align right-bar">
+              <a href="#report_a_problem" class="pill-button app-header__item">
+                report a problem
+              </a>
+              <button class="dropdown-toggle app-header__item">
+                sobi kiosks
+              </button>
+            </div>
           </div>
-          <div class="right-align right-bar">
-            <a href="#report_a_problem" class="pill-button app-header__item">
-              report a problem
-            </a>
-            <button class="dropdown-toggle app-header__item">
-              sobi kiosks
-            </button>
+        </div>
+        <nav class="app-nav">
+          <div class="primary-nav">
+            <div class="clear">
+              <div class="user-actions right-align">
+                <div class="clear">
+                  <div class="user">
+                    <span class="avatar"></span>
+                    <span class="username">Justin Wiley</span>
+                  </div>
+                  <button class="settings"></button>
+                </div>
+              </div>
+              <div class="navigation-list">
+                <div class="clear">
+                  <ul>
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#">Network1</a></li>
+                    <li><a href="#">Kiosk1</a></li>
+                    <li class="current"><a href="#">Settings</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
+          <div class="secondary-nav">
+            <div class="clear">
+              <ul>
+                <li><a href="#">Setting1</a></li>
+                <li><a href="#">Setting2</a></li>
+                <li><a href="#">Setting3</a></li>
+                <li><a href="#">Setting4</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <main class="app-content">
+        <div class="settings">
+          <div class="grid-container">
+            <h2>Setting 2</h2>
+            <div class="setting-options">
+              <div class="clear">
+                <button class="white-button setting-options__button">setting 1</button>
+                <button class="white-button setting-options__button">setting 2</button>
+                <button class="white-button setting-options__button">setting 3</button>
+              </div>
+            </div>
+            <div class="ajax"></div>
+          </div>
+        </div>
+      </main>
+      <div class="push"></div>
+    </div>
+    <footer class="footer">
+      <div class="clear">
+        <div class="footer-content">
+          <p><span>Copyright &copy; <a href="http://socialbicycles.com/" target="_blank">Social Bicycles</a> 2017.</span> <span>All rights reserved.</span>
         </div>
       </div>
-      <nav class="app-nav">
-        <div class="primary-nav">
-          <div class="clear">
-            <div class="user-actions right-align">
-              <div class="clear">
-                <div class="user">
-                  <span class="avatar"></span>
-                  <span class="username">Justin Wiley</span>
-                </div>
-                <button class="settings"></button>
-              </div>
-            </div>
-            <div class="navigation-list">
-              <div class="clear">
-                <ul>
-                  <li><a href="#">Dashboard</a></li>
-                  <li><a href="#">Network1</a></li>
-                  <li><a href="#">Kiosk1</a></li>
-                  <li class="current"><a href="#">Settings</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="secondary-nav">
-          //secondary
-        </div>
-      </nav>
-    </header>
-    <main>
-
-    </main>
-    <footer>
-      //footer
     </footer>
   </body>
 </html>

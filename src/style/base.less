@@ -9,6 +9,15 @@ html, body {
   background-color: @pale;
 }
 
+.wrapper {
+  min-height: 100%;
+  margin-bottom: -1*@footer-height;
+}
+.footer,
+.push {
+  height: @footer-height;
+}
+
 h1, h2, h3, h4, h5, h6, p, ul, li, button {
   margin: 0;
   padding: 0;
@@ -24,7 +33,7 @@ button {
 }
 
 .clear:after {
-   content: " "; /* Older browser do not support empty content */
+   content: " ";
    visibility: hidden;
    display: block;
    height: 0;
@@ -41,4 +50,21 @@ button {
 
 .right-align {
   text-align: right;
+}
+
+.white-button {
+  background-color: @chalk;
+  color: black;
+  border: 1px solid @fog;
+  height: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  font-size: @fontsize-small-regular;
+  width: 170px;
+  padding-left: 15px;
+  text-align: left;
+  .border-radius(4px);
+  -webkit-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.25);
+  -moz-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.25);
+  box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.25);
 }
