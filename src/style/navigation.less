@@ -2,6 +2,9 @@
   background-color: @green;
   height: @topbar-height;
   position: relative;
+  @media screen and (max-width: @tablet-breakpoint) {
+    height: 2*@topbar-height;
+  }
   .left-bar, .right-bar {
     display: block;
     float: left;
@@ -26,6 +29,9 @@
     span {
       font-weight: 600;
     }
+    @media screen and (max-width: @tablet-breakpoint) {
+      font-size: @fontsize-tiny;
+    }
   }
   .dropdown-toggle {
     background-color: @dark-green;
@@ -34,6 +40,17 @@
     -webkit-box-shadow: inset 2px 0px 5px 0px rgba(0,0,0,0.15);
     -moz-box-shadow: inset 2px 0px 5px 0px rgba(0,0,0,0.15);
     box-shadow: inset 2px 0px 5px 0px rgba(0,0,0,0.15);
+    @media screen and (max-width: @tablet-breakpoint) {
+      width: 50%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+    &.kiosks-dropdown {
+      @media screen and (max-width: @tablet-breakpoint) {
+        left: 50%;
+      }
+    }
     .network-counter {
       .border-radius(8px);
       color: @dark-green;
@@ -59,9 +76,15 @@
     font-size: @fontsize-micro;
     border-bottom: 1px solid #94c061;
     border-right: 1px solid #94c061;
+    @media screen and (max-width: @tablet-breakpoint) {
+      margin-right: 20px;
+      margin-top: 7px;
+    }
   }
 }
 
+
+/********************************************************/
 
 .app-nav {
   background-color: @coal;
@@ -69,13 +92,24 @@
     background-color: @coal;
     height: @midbar-height;
     border-bottom: 1px solid @ash;
+    @media screen and (max-width: @tablet-breakpoint) {
+      height: 2*@midbar-height;
+    }
     .user-actions {
       float: right;
       height: @midbar-height;
+      @media screen and (max-width: @tablet-breakpoint) {
+        float: none;
+        border-bottom: 1px solid @ash;
+      }
       .user {
         display: inline-block;
         line-height: @midbar-height;
         vertical-align: middle;
+        @media screen and (max-width: @tablet-breakpoint) {
+          float: left;
+          margin-left: 20px;
+        }
         .avatar {
           .border-radius(50%);
           display: inline-block;
@@ -86,6 +120,9 @@
           background-color: white;
           background-image: url('../media/avatar.png');
           background-size: cover;
+          @media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+            background-image: url('../media/avatar@2x.png');
+          }
         }
         .username {
           color: white;
@@ -116,6 +153,18 @@
           background-image: url('../media/gear.png');
           background-repeat: no-repeat;
           background-position: center center;
+          transform: rotate(0deg);
+          transition: transform 0.8s;
+          @media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+            background-image: url('../media/gear@2x.png');
+          }
+        }
+        &:hover {
+          background-color: black;
+          background-color: @ash;;
+          &:after {
+            transform: rotate(90deg);
+          }
         }
       }
     }

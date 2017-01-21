@@ -82,6 +82,11 @@ button {
   height: 30px;
   position: relative;
 }
+@media screen and (max-width: 768px) {
+  .top-bar {
+    height: 60px;
+  }
+}
 .top-bar .left-bar,
 .top-bar .right-bar {
   display: block;
@@ -108,6 +113,11 @@ button {
 .top-bar .current-location span {
   font-weight: 600;
 }
+@media screen and (max-width: 768px) {
+  .top-bar .current-location {
+    font-size: 10px;
+  }
+}
 .top-bar .dropdown-toggle {
   background-color: #568c19;
   cursor: pointer;
@@ -115,6 +125,19 @@ button {
   -webkit-box-shadow: inset 2px 0px 5px 0px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: inset 2px 0px 5px 0px rgba(0, 0, 0, 0.15);
   box-shadow: inset 2px 0px 5px 0px rgba(0, 0, 0, 0.15);
+}
+@media screen and (max-width: 768px) {
+  .top-bar .dropdown-toggle {
+    width: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .top-bar .dropdown-toggle.kiosks-dropdown {
+    left: 50%;
+  }
 }
 .top-bar .dropdown-toggle .network-counter {
   -webkit-border-radius: 8px;
@@ -155,6 +178,13 @@ button {
   border-bottom: 1px solid #94c061;
   border-right: 1px solid #94c061;
 }
+@media screen and (max-width: 768px) {
+  .top-bar .pill-button {
+    margin-right: 20px;
+    margin-top: 7px;
+  }
+}
+/********************************************************/
 .app-nav {
   background-color: #1e1e1e;
 }
@@ -163,14 +193,31 @@ button {
   height: 64px;
   border-bottom: 1px solid #464646;
 }
+@media screen and (max-width: 768px) {
+  .app-nav .primary-nav {
+    height: 128px;
+  }
+}
 .app-nav .primary-nav .user-actions {
   float: right;
   height: 64px;
+}
+@media screen and (max-width: 768px) {
+  .app-nav .primary-nav .user-actions {
+    float: none;
+    border-bottom: 1px solid #464646;
+  }
 }
 .app-nav .primary-nav .user-actions .user {
   display: inline-block;
   line-height: 64px;
   vertical-align: middle;
+}
+@media screen and (max-width: 768px) {
+  .app-nav .primary-nav .user-actions .user {
+    float: left;
+    margin-left: 20px;
+  }
 }
 .app-nav .primary-nav .user-actions .user .avatar {
   -webkit-border-radius: 50%;
@@ -187,6 +234,11 @@ button {
   background-color: white;
   background-image: url('../media/avatar.png');
   background-size: cover;
+}
+@media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+  .app-nav .primary-nav .user-actions .user .avatar {
+    background-image: url('../media/avatar@2x.png');
+  }
 }
 .app-nav .primary-nav .user-actions .user .username {
   color: white;
@@ -217,6 +269,20 @@ button {
   background-image: url('../media/gear.png');
   background-repeat: no-repeat;
   background-position: center center;
+  transform: rotate(0deg);
+  transition: transform 0.8s;
+}
+@media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+  .app-nav .primary-nav .user-actions .settings:after {
+    background-image: url('../media/gear@2x.png');
+  }
+}
+.app-nav .primary-nav .user-actions .settings:hover {
+  background-color: black;
+  background-color: #464646;
+}
+.app-nav .primary-nav .user-actions .settings:hover:after {
+  transform: rotate(90deg);
 }
 .app-nav .primary-nav .navigation-list {
   float: left;
