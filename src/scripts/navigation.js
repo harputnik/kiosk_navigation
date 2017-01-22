@@ -1,13 +1,11 @@
 $(document).ready(function(){
-  navItemsCounter = 0;
   path = [];
   navItemsArray = [];
-  setTimeout(function(){
-    getData();
-  }, 500);
+  getData();
 });
 
-var navItem = function(id, node, path, tabs, content, isSettingTab){
+// class for each node in navigation tree
+var navItem = function(id, node, path, tabs, content, isSettingTab, additionalClass){
   this.id = id;
   this.node = node;
   this.path = [];
@@ -17,128 +15,106 @@ var navItem = function(id, node, path, tabs, content, isSettingTab){
   this.tabs = tabs;
   this.content = content;
   this.isSettingTab = isSettingTab;
+  this.additionalClass = additionalClass;
 };
 
-
+// get data from json file
 function getData(){
   (function() {
     $.getJSON("navigation.json", function(data) {
       getAllNodes(data);
     }).done(function() {
-      console.log(navItemsArray);
+      display(0);
+      navigate();
+      setTimeout(function(){
+        $('.spinner-overlay').fadeOut();
+      }, 500);
     });
   })();
 };
 
-
 function getAllNodes(data){
-  path.push(data.name);
   $.each(data.navigation, function(i, node){
-    navItemsArray.push(new navItem(navItemsCounter, node.name, path, node.settings, node.directions, false));
+    path.push(node.id);
+    navItemsArray.push(new navItem(node.id, node.name, path, node.settings, node.directions, false));
     path.pop();
     getNode(node);
   });
 };
 
 function getNode(data){
-  navItemsCounter++;
-  path.push(data.name);
+  path.push(data.id);
   $.each(data.settings, function(i, node){
-    navItemsArray.push(new navItem(navItemsCounter, node.name, path, node.settings, node.directions, true));
+    //path.push(node.id);
+    navItemsArray.push(new navItem(node.id, node.name, path, node.settings, node.directions, true, node.additionalClass));
+    //path.pop();
     getNode(node);
   });
   $.each(data.directions, function(i, node){
-    navItemsArray.push(new navItem(navItemsCounter, node.name, path, node.settings, node.directions, false));
-    //console.log(node.name, path, node.settings, node.directions);
+    path.push(node.id);
+    navItemsArray.push(new navItem(node.id, node.name, path, node.settings, node.directions, false, node.additionalClass));
+    path.pop();
     getNode(node);
   });
   path.pop();
 };
 
+function pathList(path){
+  var html = '';
+  for(i=0; i<path.length; i++) {
+    html +=
+      '<li><a class="navigationTrigger" href="" data-id="' + navItemsArray[path[i]].id + '">'
+      + navItemsArray[path[i]].node
+      + '</a></li>';
+  }
+  return html;
+};
 
-/*
-function getSettings(data){
-  $.each(data.settings, function(i, node){
-    if ( node.settings.length > 0 ) {
-      getSettings(node);
+function optionsList(options){
+  var html = '';
+  for(i=0; i<options.length; i++) {
+    html +=
+      '<li><a class="navigationTrigger" href="" data-id="' + options[i].id + '">'
+      + options[i].name
+      + '</a></li>';
+  }
+  return html;
+};
+
+function contentList(content){
+  var html = '';
+  for(i=0; i<content.length; i++) {
+    html +=
+      '<button class="' + content[i].additionalClass + ' navigationTrigger white-button setting-options__button" data-id="' + content[i].id + '">'
+      + content[i].name
+      + '</button>';
+  }
+  return html;
+};
+
+function display(queryId){
+  var current = navItemsArray[queryId];
+
+  if ( current.content.length > 0 || current.tabs.length > 0 ) {
+    $('#content_name').text(current.node);
+    $('#content').html(contentList(current.content));
+    if( !current.isSettingTab ) {
+      $('#primary').html(pathList(navItemsArray[queryId].path));
+      $('#settingsTabs').html(optionsList(current.tabs));
+      if ($('#settingsTabs').is(':empty')){
+        $('.secondary-nav').slideUp();
+        $('#primary li').removeClass('has_secondary');
+      } else {
+        $('.secondary-nav').slideDown();
+        $('#primary li:last-child').addClass('has_secondary');
+      }
     }
-    if ( node.directions.length > 0 ) {
-      getDirections(node);
-    }
+  }
+}
+
+function navigate(){
+  $('.app').on('click', '.navigationTrigger', function(event){
+    event.preventDefault();
+    display($(this).data("id"));
   });
 };
-
-function getDirections(data){
-  $.each(data.directions, function(i, node){
-    if ( node.settings.length > 0 ) {
-      getSettings(node);
-    }
-    if ( node.directions.length > 0 ) {
-      getDirections(node);
-    }
-  });
-};
-
-
-*/
-
-/******************************/
-
-
-
-
-
-/*
-
-
-function navigation(){
-  (function() {
-    $.getJSON("navigation.json", function(data) {
-      $(".primary").append(
-        '<button class="white-button nav-element">'
-        + data.root.name
-        + '</button>'
-      );
-      $.each(data.root.directions, function(i, direction){
-        $(".secondary").append(
-          '<button class="white-button nav-element" data-node="'
-          + direction.name
-          + '">'
-          + direction.name
-          + '</button>'
-        );
-      });
-    });
-  })();
-};
-
-
-function goTo(){
-  $('.wrapper').on('click', '.nav-element', function(){
-    currentNew = $(this).data('node');
-    alert(currentNew);
-    $.getJSON("navigation.json", function(data) {
-      $.each(data.root.directions, function(i, item){
-        if ( item.name == currentNew ) {
-          hatml = '';
-          $(".primary").append(
-            '<button class="white-button nav-element">'
-            + item.name
-            + '</button>'
-          );
-          $.each(item.directions, function(i, direction){
-            hatml +=
-            '<button class="white-button nav-element" data-node="'
-            + direction.name
-            + '">'
-            + direction.name
-            + '</button>';
-
-            $(".secondary").html(hatml);
-          });
-        }
-      });
-    });
-  });
-};
-*/

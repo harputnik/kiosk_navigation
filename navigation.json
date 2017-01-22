@@ -2,35 +2,43 @@
   "navigation" : [
     {
       "name" : "dashboard",
+      "id" : 0,
       "settings" : [],
       "directions" : [
         {
           "name" : "network1",
+          "id" : 1,
           "settings" : [],
           "directions" : [
             {
               "name" : "kiosk1",
+              "id" : 2,
               "settings" : [],
               "directions" : [
                 {
                   "name" : "setting1",
+                  "id" : 3,
                   "settings" : [
                     {
                       "name" : "set1",
+                      "id" : 4,
                       "settings" : [],
                       "directions" : [
                         {
                           "name" : "set1 subset1",
+                          "id" : 5,
                           "settings" : [],
                           "directions" : []
                         },
                         {
                           "name" : "set1 subset2",
+                          "id" : 6,
                           "settings" : [],
                           "directions" : []
                         },
                         {
                           "name" : "set1 subset3",
+                          "id" : 7,
                           "settings" : [],
                           "directions" : []
                         }
@@ -38,20 +46,24 @@
                     },
                     {
                       "name" : "set2",
+                      "id" : 8,
                       "settings" : [],
                       "directions" : [
                         {
                           "name" : "set2 subset1",
+                          "id" : 9,
                           "settings" : [],
                           "directions" : []
                         },
                         {
                           "name" : "set2 subset2",
+                          "id" : 10,
                           "settings" : [],
                           "directions" : []
                         },
                         {
                           "name" : "set2 subset3",
+                          "id" : 11,
                           "settings" : [],
                           "directions" : []
                         }
@@ -59,20 +71,24 @@
                     },
                     {
                       "name" : "set3",
+                      "id" : 12,
                       "settings" : [],
                       "directions" : [
                         {
                           "name" : "set3 subset1",
+                          "id" : 13,
                           "settings" : [],
                           "directions" : []
                         },
                         {
                           "name" : "set3 subset2",
+                          "id" : 14,
                           "settings" : [],
                           "directions" : []
                         },
                         {
                           "name" : "set3 subset3",
+                          "id" : 15,
                           "settings" : [],
                           "directions" : []
                         }
@@ -80,20 +96,24 @@
                     },
                     {
                       "name" : "set4",
+                      "id" : 16,
                       "settings" : [],
                       "directions" : [
                         {
                           "name" : "set4 subset1",
+                          "id" : 17,
                           "settings" : [],
                           "directions" : []
                         },
                         {
                           "name" : "set4 subset2",
+                          "id" : 18,
                           "settings" : [],
                           "directions" : []
                         },
                         {
                           "name" : "set4 subset3",
+                          "id" : 19,
                           "settings" : [],
                           "directions" : []
                         }
@@ -104,23 +124,28 @@
                 },
                 {
                   "name" : "setting2",
+                  "id" : 20,
                   "settings" : [
                     {
                       "name" : "set1",
+                      "id" : 21,
                       "settings" : [],
                       "directions" : [
                         {
                           "name" : "set1 subset1",
+                          "id" : 22,
                           "settings" : [],
                           "directions" : []
                         },
                         {
                           "name" : "set1 subset2",
+                          "id" : 23,
                           "settings" : [],
                           "directions" : []
                         },
                         {
                           "name" : "set1 subset3",
+                          "id" : 24,
                           "settings" : [],
                           "directions" : []
                         }
@@ -128,20 +153,24 @@
                     },
                     {
                       "name" : "set2",
+                      "id" : 25,
                       "settings" : [],
                       "directions" : [
                         {
                           "name" : "set2 subset1",
+                          "id" : 26,
                           "settings" : [],
                           "directions" : []
                         },
                         {
                           "name" : "set2 subset2",
+                          "id" : 27,
                           "settings" : [],
                           "directions" : []
                         },
                         {
                           "name" : "set2 subset3",
+                          "id" : 28,
                           "settings" : [],
                           "directions" : []
                         }
@@ -149,20 +178,24 @@
                     },
                     {
                       "name" : "set3",
+                      "id" : 29,
                       "settings" : [],
                       "directions" : [
                         {
                           "name" : "set3 subset1",
+                          "id" : 30,
                           "settings" : [],
                           "directions" : []
                         },
                         {
                           "name" : "set3 subset2",
+                          "id" : 31,
                           "settings" : [],
                           "directions" : []
                         },
                         {
                           "name" : "set3 subset3",
+                          "id" : 32,
                           "settings" : [],
                           "directions" : []
                         }
@@ -170,20 +203,24 @@
                     },
                     {
                       "name" : "set4",
+                      "id" : 33,
                       "settings" : [],
                       "directions" : [
                         {
                           "name" : "set4 subset1",
+                          "id" : 34,
                           "settings" : [],
                           "directions" : []
                         },
                         {
                           "name" : "set4 subset2",
+                          "id" : 35,
                           "settings" : [],
                           "directions" : []
                         },
                         {
                           "name" : "set4 subset3",
+                          "id" : 36,
                           "settings" : [],
                           "directions" : []
                         }
@@ -196,27 +233,33 @@
             },
             {
               "name" : "kiosk2",
+              "id" : 37,
               "settings" : [],
               "directions" : [
                 {
                   "name" : "setting1",
+                  "id" : 38,
                   "settings" : [
                     {
                       "name" : "set1",
+                      "id" : 39,
                       "settings" : [],
                       "directions" : [
                         {
                           "name" : "set1 subset1",
+                          "id" : 40,
                           "settings" : [],
                           "directions" : []
                         },
                         {
                           "name" : "set1 subset2",
+                          "id" : 41,
                           "settings" : [],
                           "directions" : []
                         },
                         {
                           "name" : "set1 subset3",
+                          "id" : 42,
                           "settings" : [],
                           "directions" : []
                         }
@@ -224,20 +267,24 @@
                     },
                     {
                       "name" : "set2",
+                      "id" : 43,
                       "settings" : [],
                       "directions" : [
                         {
                           "name" : "set2 subset1",
+                          "id" : 44,
                           "settings" : [],
                           "directions" : []
                         },
                         {
                           "name" : "set2 subset2",
+                          "id" : 45,
                           "settings" : [],
                           "directions" : []
                         },
                         {
                           "name" : "set2 subset3",
+                          "id" : 46,
                           "settings" : [],
                           "directions" : []
                         }
@@ -245,20 +292,24 @@
                     },
                     {
                       "name" : "set3",
+                      "id" : 47,
                       "settings" : [],
                       "directions" : [
                         {
                           "name" : "set3 subset1",
+                          "id" : 48,
                           "settings" : [],
                           "directions" : []
                         },
                         {
                           "name" : "set3 subset2",
+                          "id" : 49,
                           "settings" : [],
                           "directions" : []
                         },
                         {
                           "name" : "set3 subset3",
+                          "id" : 50,
                           "settings" : [],
                           "directions" : []
                         }
@@ -266,20 +317,24 @@
                     },
                     {
                       "name" : "set4",
+                      "id" : 51,
                       "settings" : [],
                       "directions" : [
                         {
                           "name" : "set4 subset1",
+                          "id" : 52,
                           "settings" : [],
                           "directions" : []
                         },
                         {
                           "name" : "set4 subset2",
+                          "id" : 53,
                           "settings" : [],
                           "directions" : []
                         },
                         {
                           "name" : "set4 subset3",
+                          "id" : 54,
                           "settings" : [],
                           "directions" : []
                         }
@@ -290,23 +345,28 @@
                 },
                 {
                   "name" : "setting2",
+                  "id" : 55,
                   "settings" : [
                     {
                       "name" : "set1",
+                      "id" : 56,
                       "settings" : [],
                       "directions" : [
                         {
                           "name" : "set1 subset1",
+                          "id" : 57,
                           "settings" : [],
                           "directions" : []
                         },
                         {
                           "name" : "set1 subset2",
+                          "id" : 58,
                           "settings" : [],
                           "directions" : []
                         },
                         {
                           "name" : "set1 subset3",
+                          "id" : 59,
                           "settings" : [],
                           "directions" : []
                         }
@@ -314,20 +374,24 @@
                     },
                     {
                       "name" : "set2",
+                      "id" : 60,
                       "settings" : [],
                       "directions" : [
                         {
                           "name" : "set2 subset1",
+                          "id" : 61,
                           "settings" : [],
                           "directions" : []
                         },
                         {
                           "name" : "set2 subset2",
+                          "id" : 62,
                           "settings" : [],
                           "directions" : []
                         },
                         {
                           "name" : "set2 subset3",
+                          "id" : 63,
                           "settings" : [],
                           "directions" : []
                         }
@@ -335,20 +399,24 @@
                     },
                     {
                       "name" : "set3",
+                      "id" : 64,
                       "settings" : [],
                       "directions" : [
                         {
                           "name" : "set3 subset1",
+                          "id" : 65,
                           "settings" : [],
                           "directions" : []
                         },
                         {
                           "name" : "set3 subset2",
+                          "id" : 66,
                           "settings" : [],
                           "directions" : []
                         },
                         {
                           "name" : "set3 subset3",
+                          "id" : 67,
                           "settings" : [],
                           "directions" : []
                         }
@@ -356,20 +424,24 @@
                     },
                     {
                       "name" : "set4",
+                      "id" : 68,
                       "settings" : [],
                       "directions" : [
                         {
                           "name" : "set4 subset1",
+                          "id" : 69,
                           "settings" : [],
                           "directions" : []
                         },
                         {
                           "name" : "set4 subset2",
+                          "id" : 70,
                           "settings" : [],
                           "directions" : []
                         },
                         {
                           "name" : "set4 subset3",
+                          "id" : 71,
                           "settings" : [],
                           "directions" : []
                         }
@@ -382,23 +454,29 @@
             },
             {
               "name" : "network settings",
+              "id" : 72,
+              "additionalClass" : "pull-right",
               "settings" : [
                 {
                   "name" : "set1",
+                  "id" : 73,
                   "settings" : [],
                   "directions" : [
                     {
                       "name" : "setting8",
+                      "id" : 74,
                       "settings" : [],
                       "directions" : []
                     },
                     {
                       "name" : "setting9",
+                      "id" : 75,
                       "settings" : [],
                       "directions" : []
                     },
                     {
                       "name" : "setting10",
+                      "id" : 76,
                       "settings" : [],
                       "directions" : []
                     }
@@ -406,20 +484,24 @@
                 },
                 {
                   "name" : "set2",
+                  "id" : 77,
                   "settings" : [],
                   "directions" : [
                     {
                       "name" : "setting8",
+                      "id" : 78,
                       "settings" : [],
                       "directions" : []
                     },
                     {
                       "name" : "setting9",
+                      "id" : 79,
                       "settings" : [],
                       "directions" : []
                     },
                     {
                       "name" : "setting10",
+                      "id" : 80,
                       "settings" : [],
                       "directions" : []
                     }
@@ -427,20 +509,24 @@
                 },
                 {
                   "name" : "set3",
+                  "id" : 81,
                   "settings" : [],
                   "directions" : [
                     {
                       "name" : "setting8",
+                      "id" : 82,
                       "settings" : [],
                       "directions" : []
                     },
                     {
                       "name" : "setting9",
+                      "id" : 83,
                       "settings" : [],
                       "directions" : []
                     },
                     {
                       "name" : "setting10",
+                      "id" : 84,
                       "settings" : [],
                       "directions" : []
                     }
@@ -453,31 +539,38 @@
         },
         {
           "name" : "network2",
+          "id" : 85,
           "settings" : [],
           "directions" : [
             {
               "name" : "kiosk1",
+              "id" : 86,
               "settings" : [],
               "directions" : [
                 {
                   "name" : "setting1",
+                  "id" : 87,
                   "settings" : [
                     {
                       "name" : "set1",
+                      "id" : 88,
                       "settings" : [],
                       "directions" : [
                         {
                           "name" : "set1 subset1",
+                          "id" : 89,
                           "settings" : [],
                           "directions" : []
                         },
                         {
                           "name" : "set1 subset2",
+                          "id" : 90,
                           "settings" : [],
                           "directions" : []
                         },
                         {
                           "name" : "set1 subset3",
+                          "id" : 91,
                           "settings" : [],
                           "directions" : []
                         }
@@ -485,20 +578,24 @@
                     },
                     {
                       "name" : "set2",
+                      "id" : 92,
                       "settings" : [],
                       "directions" : [
                         {
                           "name" : "set2 subset1",
+                          "id" : 93,
                           "settings" : [],
                           "directions" : []
                         },
                         {
                           "name" : "set2 subset2",
+                          "id" : 94,
                           "settings" : [],
                           "directions" : []
                         },
                         {
                           "name" : "set2 subset3",
+                          "id" : 95,
                           "settings" : [],
                           "directions" : []
                         }
@@ -506,20 +603,24 @@
                     },
                     {
                       "name" : "set3",
+                      "id" : 96,
                       "settings" : [],
                       "directions" : [
                         {
                           "name" : "set3 subset1",
+                          "id" : 97,
                           "settings" : [],
                           "directions" : []
                         },
                         {
                           "name" : "set3 subset2",
+                          "id" : 98,
                           "settings" : [],
                           "directions" : []
                         },
                         {
                           "name" : "set3 subset3",
+                          "id" : 99,
                           "settings" : [],
                           "directions" : []
                         }
@@ -527,20 +628,24 @@
                     },
                     {
                       "name" : "set4",
+                      "id" : 100,
                       "settings" : [],
                       "directions" : [
                         {
                           "name" : "set4 subset1",
+                          "id" : 101,
                           "settings" : [],
                           "directions" : []
                         },
                         {
                           "name" : "set4 subset2",
+                          "id" : 102,
                           "settings" : [],
                           "directions" : []
                         },
                         {
                           "name" : "set4 subset3",
+                          "id" : 103,
                           "settings" : [],
                           "directions" : []
                         }
@@ -551,23 +656,28 @@
                 },
                 {
                   "name" : "setting2",
+                  "id" : 104,
                   "settings" : [
                     {
                       "name" : "set1",
+                      "id" : 105,
                       "settings" : [],
                       "directions" : [
                         {
                           "name" : "set1 subset1",
+                          "id" : 106,
                           "settings" : [],
                           "directions" : []
                         },
                         {
                           "name" : "set1 subset2",
+                          "id" : 107,
                           "settings" : [],
                           "directions" : []
                         },
                         {
                           "name" : "set1 subset3",
+                          "id" : 108,
                           "settings" : [],
                           "directions" : []
                         }
@@ -575,20 +685,24 @@
                     },
                     {
                       "name" : "set2",
+                      "id" : 109,
                       "settings" : [],
                       "directions" : [
                         {
                           "name" : "set2 subset1",
+                          "id" : 110,
                           "settings" : [],
                           "directions" : []
                         },
                         {
                           "name" : "set2 subset2",
+                          "id" : 111,
                           "settings" : [],
                           "directions" : []
                         },
                         {
                           "name" : "set2 subset3",
+                          "id" : 112,
                           "settings" : [],
                           "directions" : []
                         }
@@ -596,20 +710,24 @@
                     },
                     {
                       "name" : "set3",
+                      "id" : 113,
                       "settings" : [],
                       "directions" : [
                         {
                           "name" : "set3 subset1",
+                          "id" : 114,
                           "settings" : [],
                           "directions" : []
                         },
                         {
                           "name" : "set3 subset2",
+                          "id" : 115,
                           "settings" : [],
                           "directions" : []
                         },
                         {
                           "name" : "set3 subset3",
+                          "id" : 116,
                           "settings" : [],
                           "directions" : []
                         }
@@ -617,20 +735,24 @@
                     },
                     {
                       "name" : "set4",
+                      "id" : 117,
                       "settings" : [],
                       "directions" : [
                         {
                           "name" : "set4 subset1",
+                          "id" : 118,
                           "settings" : [],
                           "directions" : []
                         },
                         {
                           "name" : "set4 subset2",
+                          "id" : 119,
                           "settings" : [],
                           "directions" : []
                         },
                         {
                           "name" : "set4 subset3",
+                          "id" : 120,
                           "settings" : [],
                           "directions" : []
                         }
@@ -643,27 +765,33 @@
             },
             {
               "name" : "kiosk2",
+              "id" : 121,
               "settings" : [],
               "directions" : [
                 {
                   "name" : "setting1",
+                  "id" : 122,
                   "settings" : [
                     {
                       "name" : "set1",
+                      "id" : 123,
                       "settings" : [],
                       "directions" : [
                         {
                           "name" : "set1 subset1",
+                          "id" : 124,
                           "settings" : [],
                           "directions" : []
                         },
                         {
                           "name" : "set1 subset2",
+                          "id" : 125,
                           "settings" : [],
                           "directions" : []
                         },
                         {
                           "name" : "set1 subset3",
+                          "id" : 126,
                           "settings" : [],
                           "directions" : []
                         }
@@ -671,20 +799,24 @@
                     },
                     {
                       "name" : "set2",
+                      "id" : 127,
                       "settings" : [],
                       "directions" : [
                         {
                           "name" : "set2 subset1",
+                          "id" : 128,
                           "settings" : [],
                           "directions" : []
                         },
                         {
                           "name" : "set2 subset2",
+                          "id" : 129,
                           "settings" : [],
                           "directions" : []
                         },
                         {
                           "name" : "set2 subset3",
+                          "id" : 130,
                           "settings" : [],
                           "directions" : []
                         }
@@ -692,20 +824,24 @@
                     },
                     {
                       "name" : "set3",
+                      "id" : 131,
                       "settings" : [],
                       "directions" : [
                         {
                           "name" : "set3 subset1",
+                          "id" : 132,
                           "settings" : [],
                           "directions" : []
                         },
                         {
                           "name" : "set3 subset2",
+                          "id" : 133,
                           "settings" : [],
                           "directions" : []
                         },
                         {
                           "name" : "set3 subset3",
+                          "id" : 134,
                           "settings" : [],
                           "directions" : []
                         }
@@ -713,20 +849,24 @@
                     },
                     {
                       "name" : "set4",
+                      "id" : 135,
                       "settings" : [],
                       "directions" : [
                         {
                           "name" : "set4 subset1",
+                          "id" : 136,
                           "settings" : [],
                           "directions" : []
                         },
                         {
                           "name" : "set4 subset2",
+                          "id" : 137,
                           "settings" : [],
                           "directions" : []
                         },
                         {
                           "name" : "set4 subset3",
+                          "id" : 138,
                           "settings" : [],
                           "directions" : []
                         }
@@ -737,23 +877,28 @@
                 },
                 {
                   "name" : "setting2",
+                  "id" : 139,
                   "settings" : [
                     {
                       "name" : "set1",
+                      "id" : 140,
                       "settings" : [],
                       "directions" : [
                         {
                           "name" : "set1 subset1",
+                          "id" : 141,
                           "settings" : [],
                           "directions" : []
                         },
                         {
                           "name" : "set1 subset2",
+                          "id" : 142,
                           "settings" : [],
                           "directions" : []
                         },
                         {
                           "name" : "set1 subset3",
+                          "id" : 143,
                           "settings" : [],
                           "directions" : []
                         }
@@ -761,20 +906,24 @@
                     },
                     {
                       "name" : "set2",
+                      "id" : 144,
                       "settings" : [],
                       "directions" : [
                         {
                           "name" : "set2 subset1",
+                          "id" : 145,
                           "settings" : [],
                           "directions" : []
                         },
                         {
                           "name" : "set2 subset2",
+                          "id" : 146,
                           "settings" : [],
                           "directions" : []
                         },
                         {
                           "name" : "set2 subset3",
+                          "id" : 147,
                           "settings" : [],
                           "directions" : []
                         }
@@ -782,20 +931,24 @@
                     },
                     {
                       "name" : "set3",
+                      "id" : 148,
                       "settings" : [],
                       "directions" : [
                         {
                           "name" : "set3 subset1",
+                          "id" : 149,
                           "settings" : [],
                           "directions" : []
                         },
                         {
                           "name" : "set3 subset2",
+                          "id" : 150,
                           "settings" : [],
                           "directions" : []
                         },
                         {
                           "name" : "set3 subset3",
+                          "id" : 151,
                           "settings" : [],
                           "directions" : []
                         }
@@ -803,20 +956,24 @@
                     },
                     {
                       "name" : "set4",
+                      "id" : 152,
                       "settings" : [],
                       "directions" : [
                         {
                           "name" : "set4 subset1",
+                          "id" : 153,
                           "settings" : [],
                           "directions" : []
                         },
                         {
                           "name" : "set4 subset2",
+                          "id" : 154,
                           "settings" : [],
                           "directions" : []
                         },
                         {
                           "name" : "set4 subset3",
+                          "id" : 155,
                           "settings" : [],
                           "directions" : []
                         }
@@ -829,23 +986,28 @@
             },
             {
               "name" : "network settings",
+              "id" : 156,
               "settings" : [
                 {
                   "name" : "set1",
+                  "id" : 157,
                   "settings" : [],
                   "directions" : [
                     {
                       "name" : "setting8",
+                      "id" : 158,
                       "settings" : [],
                       "directions" : []
                     },
                     {
                       "name" : "setting9",
+                      "id" : 159,
                       "settings" : [],
                       "directions" : []
                     },
                     {
                       "name" : "setting10",
+                      "id" : 160,
                       "settings" : [],
                       "directions" : []
                     }
@@ -853,20 +1015,24 @@
                 },
                 {
                   "name" : "set2",
+                  "id" : 161,
                   "settings" : [],
                   "directions" : [
                     {
                       "name" : "setting8",
+                      "id" : 162,
                       "settings" : [],
                       "directions" : []
                     },
                     {
                       "name" : "setting9",
+                      "id" : 163,
                       "settings" : [],
                       "directions" : []
                     },
                     {
                       "name" : "setting10",
+                      "id" : 164,
                       "settings" : [],
                       "directions" : []
                     }
@@ -874,20 +1040,24 @@
                 },
                 {
                   "name" : "set3",
+                  "id" : 165,
                   "settings" : [],
                   "directions" : [
                     {
                       "name" : "setting8",
+                      "id" : 166,
                       "settings" : [],
                       "directions" : []
                     },
                     {
                       "name" : "setting9",
+                      "id" : 167,
                       "settings" : [],
                       "directions" : []
                     },
                     {
                       "name" : "setting10",
+                      "id" : 168,
                       "settings" : [],
                       "directions" : []
                     }

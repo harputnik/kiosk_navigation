@@ -2,10 +2,17 @@
   h2 {
     font-size: @fontsize-huge;
     padding: 24px 0;
+    text-transform: capitalize;
+    @media screen and (max-width: @tablet-breakpoint) {
+      font-size: 0.6*@fontsize-huge;
+    }
   }
   .setting-options__button {
     float: left;
     margin-right: 12px;
     margin-bottom: 12px;
+    &.pull-right {
+      float: right;
+    }
   }
 }

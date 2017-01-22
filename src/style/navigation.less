@@ -1,9 +1,10 @@
 .app-header {
   background-color: @green;
   padding-bottom: 7px;
-  -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.45);
-  -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.45);
-  box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.45);
+  .box-shadow(0px 2px 5px 0px rgba(0,0,0,0.45));
+  @media screen and (max-width: @tablet-breakpoint) {
+    padding-bottom: 0;
+  }
 }
 
 .top-bar {
@@ -11,7 +12,7 @@
   height: @topbar-height;
   position: relative;
   @media screen and (max-width: @tablet-breakpoint) {
-    height: 2*@topbar-height;
+    height: 1.6*@topbar-height;
   }
   .left-bar, .right-bar {
     display: block;
@@ -30,6 +31,9 @@
     line-height: @topbar-height;
     display: inline-block;
     padding: 0 20px;
+    @media screen and (max-width: @tablet-breakpoint) {
+      line-height: 0.8*@topbar-height;
+    }
   }
   .current-location {
     font-size: @fontsize-small;
@@ -44,10 +48,10 @@
   .dropdown-toggle {
     background-color: @dark-green;
     cursor: pointer;
-    padding: 0 10px;
-    -webkit-box-shadow: inset 2px 0px 5px 0px rgba(0,0,0,0.15);
-    -moz-box-shadow: inset 2px 0px 5px 0px rgba(0,0,0,0.15);
-    box-shadow: inset 2px 0px 5px 0px rgba(0,0,0,0.15);
+    padding: 0 15px;
+    font-weight: 600;
+    .box-shadow(inset 2px 0px 5px 0px rgba(0,0,0,0.15));
+    transition: background-color 0.4s;
     @media screen and (max-width: @tablet-breakpoint) {
       width: 50%;
       position: absolute;
@@ -64,29 +68,43 @@
       color: @dark-green;
       background-color: white;
       display: inline-block;
-      padding: 0 8px;
-      line-height: 16px;
+      padding: 0 6px;
+      line-height: 12px;
+      margin-left: 6px;
       font-size: @fontsize-tiny;
+      font-weight: 600;
     }
     &:after {
       content: '';
       display: inline-block;
+      margin-left: 6px;
       .triangle-down (white, 4px);
+      position: relative;
+      top: -2px;
+      @media screen and (max-width: @tablet-breakpoint) {
+        float: right;
+        top: 10px;
+      }
+    }
+    &:hover {
+      background-color: @khaki;
     }
   }
   .pill-button {
-    .border-radius(8px);
+    .border-radius(9px);
     color: white;
     text-decoration: none;
-    background-color: @dark-green;
-    padding: 0 8px;
-    line-height: 16px;
+    background-color: @khaki;
+    padding: 0 15px;
+    line-height: 18px;
     font-size: @fontsize-micro;
     border-bottom: 1px solid #94c061;
     border-right: 1px solid #94c061;
+    font-weight: 600;
+    margin-right: 8px;
     @media screen and (max-width: @tablet-breakpoint) {
       margin-right: 20px;
-      margin-top: 7px;
+      margin-top: 3px;
     }
   }
 }
@@ -101,7 +119,7 @@
     height: @midbar-height;
     border-bottom: 1px solid @ash;
     @media screen and (max-width: @tablet-breakpoint) {
-      height: 2*@midbar-height;
+      height: 1.2*@midbar-height;
     }
     .user-actions {
       float: right;
@@ -109,6 +127,7 @@
       @media screen and (max-width: @tablet-breakpoint) {
         float: none;
         border-bottom: 1px solid @ash;
+        height: 0.6*@midbar-height;
       }
       .user {
         display: inline-block;
@@ -117,6 +136,7 @@
         @media screen and (max-width: @tablet-breakpoint) {
           float: left;
           margin-left: 20px;
+          line-height: 0.6*@midbar-height;
         }
         .avatar {
           .border-radius(50%);
@@ -127,9 +147,15 @@
           height: 40px;
           background-color: white;
           background-image: url('../media/avatar.png');
-          background-size: cover;
+          background-position: center center;
+          background-size: 130%;
           @media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
             background-image: url('../media/avatar@2x.png');
+          }
+          @media screen and (max-width: @tablet-breakpoint) {
+            width: 26px;
+            height: 26px;
+            line-height: 0.6*@midbar-height;
           }
         }
         .username {
@@ -138,6 +164,12 @@
           padding: 0 15px;
           line-height: @midbar-height;
           vertical-align: middle;
+          font-weight: 600;
+          font-size: 16px;
+          @media screen and (max-width: @tablet-breakpoint) {
+            line-height: 0.6*@midbar-height;
+            font-size: 12px;
+          }
         }
       }
       .settings {
@@ -151,6 +183,13 @@
         border-left: 1px solid @ash;
         cursor: pointer;
         transition: background-color 0.4s;
+        @media screen and (max-width: @tablet-breakpoint) {
+          height: 0.6*@midbar-height;
+          line-height: 0.6*@midbar-height;
+          width: 0.8*@midbar-height;
+          border: none;
+          background-color: transparent;
+        }
         &:after {
           content: ' ';
           display: inline-block;
@@ -168,8 +207,10 @@
           }
         }
         &:hover {
-          background-color: black;
-          background-color: @ash;;
+          background-color: @ash;
+          @media screen and (max-width: @tablet-breakpoint) {
+            background-color: transparent;
+          }
           &:after {
             transform: rotate(90deg);
           }
@@ -185,22 +226,50 @@
           display: inline-block;
           line-height: @midbar-height;
           vertical-align: middle;
+          @media screen and (max-width: @tablet-breakpoint) {
+            line-height: 0.6*@midbar-height;
+          }
           a {
             display: block;
             height: 100%;
             line-height: @midbar-height;
             padding: 0 20px;
             position: relative;
-            color: white;
+            color: @pale;
+            font-size: @fontsize-small-regular;
+            @media screen and (max-width: @tablet-breakpoint) {
+              line-height: 0.6*@midbar-height;
+              font-size: @fontsize-small;
+              padding: 0 10px;
+            }
             &:after {
               content: '';
               display: inline-block;
-              .triangle-right(@dust, 4px);
+              .triangle-right(@dust, 5px);
               position: absolute;
               right: 0;
               top: 50%;
-              margin-top: -2px;
+              margin-top: -5px;
             }
+            &:hover {
+              color: white;
+              &:after {
+                .triangle-right(@steele, 5px);
+              }
+            }
+          }
+          &:last-child {
+            a {
+              font-weight: 600;
+              &:after {
+                display: none;
+              }
+            }
+          }
+          &.has_secondary {
+            background-color: black;
+            margin-left: 10px;
+            margin-bottom: -1px;
           }
         }
       }
@@ -210,20 +279,38 @@
     background-color: @black;
     height: @bottombar-height;
     line-height: @bottombar-height;
+    @media screen and (max-width: @tablet-breakpoint) {
+      height: 0.6*@bottombar-height;
+      line-height: 0.6*@bottombar-height;
+    }
     ul {
       li {
         display: inline-block;
         height: @bottombar-height;
         line-height: @bottombar-height;
+        @media screen and (max-width: @tablet-breakpoint) {
+          height: 0.6*@bottombar-height;
+          line-height: 0.6*@bottombar-height;
+        }
         a {
           display: inline-block;
           padding: 0 20px;
           vertical-align: middle;
-          color: white;
+          color: @mist;
           border-right: 1px solid @ash;
           line-height: 26px;
-          font-size: @fontsize-small;
+          font-size: @fontsize-small-regular;
           text-transform: uppercase;
+          @media screen and (max-width: @tablet-breakpoint) {
+            height: 0.4*@bottombar-height;
+            line-height: 0.4*@bottombar-height;
+            font-size: @fontsize-small;
+          }
+        }
+        &:last-child {
+          a {
+            border-right: none;
+          }
         }
       }
     }

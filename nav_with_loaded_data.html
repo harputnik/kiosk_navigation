@@ -9,7 +9,7 @@
     <script src="src/scripts/navigation.js"></script>
   </head>
   <body>
-    <div class="wrapper">
+    <div class="app wrapper">
       <header class="app-header">
         <div class="top-bar">
           <div class="clear">
@@ -43,11 +43,7 @@
               </div>
               <div class="navigation-list">
                 <div class="clear">
-                  <ul>
-                    <li><a href="#">Dashboard</a></li>
-                    <li><a href="#">Network1</a></li>
-                    <li><a href="#">Kiosk1</a></li>
-                    <li class="current"><a href="#">Settings</a></li>
+                  <ul id="primary">
                   </ul>
                 </div>
               </div>
@@ -55,11 +51,7 @@
           </div>
           <div class="secondary-nav">
             <div class="clear">
-              <ul>
-                <li><a href="#">Setting1</a></li>
-                <li><a href="#">Setting2</a></li>
-                <li><a href="#">Setting3</a></li>
-                <li><a href="#">Setting4</a></li>
+              <ul id="settingsTabs">
               </ul>
             </div>
           </div>
@@ -68,12 +60,9 @@
       <main class="app-content">
         <div class="settings">
           <div class="grid-container">
-            <h2>Setting 2</h2>
+            <h2 id="content_name">Setting 2</h2>
             <div class="setting-options">
-              <div class="clear">
-                <button class="white-button setting-options__button">setting 1</button>
-                <button class="white-button setting-options__button">setting 2</button>
-                <button class="white-button setting-options__button">setting 3</button>
+              <div class="clear" id="content">
               </div>
             </div>
           </div>
@@ -88,5 +77,12 @@
         </div>
       </div>
     </footer>
+    <div class="spinner-overlay">
+      <div class="spinner">
+        <div class="bounce1"></div>
+        <div class="bounce2"></div>
+        <div class="bounce3"></div>
+      </div>
+    </div>
   </body>
 </html>
