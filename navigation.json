@@ -1,0 +1,904 @@
+{
+  "navigation" : [
+    {
+      "name" : "dashboard",
+      "settings" : [],
+      "directions" : [
+        {
+          "name" : "network1",
+          "settings" : [],
+          "directions" : [
+            {
+              "name" : "kiosk1",
+              "settings" : [],
+              "directions" : [
+                {
+                  "name" : "setting1",
+                  "settings" : [
+                    {
+                      "name" : "set1",
+                      "settings" : [],
+                      "directions" : [
+                        {
+                          "name" : "set1 subset1",
+                          "settings" : [],
+                          "directions" : []
+                        },
+                        {
+                          "name" : "set1 subset2",
+                          "settings" : [],
+                          "directions" : []
+                        },
+                        {
+                          "name" : "set1 subset3",
+                          "settings" : [],
+                          "directions" : []
+                        }
+                      ]
+                    },
+                    {
+                      "name" : "set2",
+                      "settings" : [],
+                      "directions" : [
+                        {
+                          "name" : "set2 subset1",
+                          "settings" : [],
+                          "directions" : []
+                        },
+                        {
+                          "name" : "set2 subset2",
+                          "settings" : [],
+                          "directions" : []
+                        },
+                        {
+                          "name" : "set2 subset3",
+                          "settings" : [],
+                          "directions" : []
+                        }
+                      ]
+                    },
+                    {
+                      "name" : "set3",
+                      "settings" : [],
+                      "directions" : [
+                        {
+                          "name" : "set3 subset1",
+                          "settings" : [],
+                          "directions" : []
+                        },
+                        {
+                          "name" : "set3 subset2",
+                          "settings" : [],
+                          "directions" : []
+                        },
+                        {
+                          "name" : "set3 subset3",
+                          "settings" : [],
+                          "directions" : []
+                        }
+                      ]
+                    },
+                    {
+                      "name" : "set4",
+                      "settings" : [],
+                      "directions" : [
+                        {
+                          "name" : "set4 subset1",
+                          "settings" : [],
+                          "directions" : []
+                        },
+                        {
+                          "name" : "set4 subset2",
+                          "settings" : [],
+                          "directions" : []
+                        },
+                        {
+                          "name" : "set4 subset3",
+                          "settings" : [],
+                          "directions" : []
+                        }
+                      ]
+                    }
+                  ],
+                  "directions" : []
+                },
+                {
+                  "name" : "setting2",
+                  "settings" : [
+                    {
+                      "name" : "set1",
+                      "settings" : [],
+                      "directions" : [
+                        {
+                          "name" : "set1 subset1",
+                          "settings" : [],
+                          "directions" : []
+                        },
+                        {
+                          "name" : "set1 subset2",
+                          "settings" : [],
+                          "directions" : []
+                        },
+                        {
+                          "name" : "set1 subset3",
+                          "settings" : [],
+                          "directions" : []
+                        }
+                      ]
+                    },
+                    {
+                      "name" : "set2",
+                      "settings" : [],
+                      "directions" : [
+                        {
+                          "name" : "set2 subset1",
+                          "settings" : [],
+                          "directions" : []
+                        },
+                        {
+                          "name" : "set2 subset2",
+                          "settings" : [],
+                          "directions" : []
+                        },
+                        {
+                          "name" : "set2 subset3",
+                          "settings" : [],
+                          "directions" : []
+                        }
+                      ]
+                    },
+                    {
+                      "name" : "set3",
+                      "settings" : [],
+                      "directions" : [
+                        {
+                          "name" : "set3 subset1",
+                          "settings" : [],
+                          "directions" : []
+                        },
+                        {
+                          "name" : "set3 subset2",
+                          "settings" : [],
+                          "directions" : []
+                        },
+                        {
+                          "name" : "set3 subset3",
+                          "settings" : [],
+                          "directions" : []
+                        }
+                      ]
+                    },
+                    {
+                      "name" : "set4",
+                      "settings" : [],
+                      "directions" : [
+                        {
+                          "name" : "set4 subset1",
+                          "settings" : [],
+                          "directions" : []
+                        },
+                        {
+                          "name" : "set4 subset2",
+                          "settings" : [],
+                          "directions" : []
+                        },
+                        {
+                          "name" : "set4 subset3",
+                          "settings" : [],
+                          "directions" : []
+                        }
+                      ]
+                    }
+                  ],
+                  "directions" : []
+                }
+              ]
+            },
+            {
+              "name" : "kiosk2",
+              "settings" : [],
+              "directions" : [
+                {
+                  "name" : "setting1",
+                  "settings" : [
+                    {
+                      "name" : "set1",
+                      "settings" : [],
+                      "directions" : [
+                        {
+                          "name" : "set1 subset1",
+                          "settings" : [],
+                          "directions" : []
+                        },
+                        {
+                          "name" : "set1 subset2",
+                          "settings" : [],
+                          "directions" : []
+                        },
+                        {
+                          "name" : "set1 subset3",
+                          "settings" : [],
+                          "directions" : []
+                        }
+                      ]
+                    },
+                    {
+                      "name" : "set2",
+                      "settings" : [],
+                      "directions" : [
+                        {
+                          "name" : "set2 subset1",
+                          "settings" : [],
+                          "directions" : []
+                        },
+                        {
+                          "name" : "set2 subset2",
+                          "settings" : [],
+                          "directions" : []
+                        },
+                        {
+                          "name" : "set2 subset3",
+                          "settings" : [],
+                          "directions" : []
+                        }
+                      ]
+                    },
+                    {
+                      "name" : "set3",
+                      "settings" : [],
+                      "directions" : [
+                        {
+                          "name" : "set3 subset1",
+                          "settings" : [],
+                          "directions" : []
+                        },
+                        {
+                          "name" : "set3 subset2",
+                          "settings" : [],
+                          "directions" : []
+                        },
+                        {
+                          "name" : "set3 subset3",
+                          "settings" : [],
+                          "directions" : []
+                        }
+                      ]
+                    },
+                    {
+                      "name" : "set4",
+                      "settings" : [],
+                      "directions" : [
+                        {
+                          "name" : "set4 subset1",
+                          "settings" : [],
+                          "directions" : []
+                        },
+                        {
+                          "name" : "set4 subset2",
+                          "settings" : [],
+                          "directions" : []
+                        },
+                        {
+                          "name" : "set4 subset3",
+                          "settings" : [],
+                          "directions" : []
+                        }
+                      ]
+                    }
+                  ],
+                  "directions" : []
+                },
+                {
+                  "name" : "setting2",
+                  "settings" : [
+                    {
+                      "name" : "set1",
+                      "settings" : [],
+                      "directions" : [
+                        {
+                          "name" : "set1 subset1",
+                          "settings" : [],
+                          "directions" : []
+                        },
+                        {
+                          "name" : "set1 subset2",
+                          "settings" : [],
+                          "directions" : []
+                        },
+                        {
+                          "name" : "set1 subset3",
+                          "settings" : [],
+                          "directions" : []
+                        }
+                      ]
+                    },
+                    {
+                      "name" : "set2",
+                      "settings" : [],
+                      "directions" : [
+                        {
+                          "name" : "set2 subset1",
+                          "settings" : [],
+                          "directions" : []
+                        },
+                        {
+                          "name" : "set2 subset2",
+                          "settings" : [],
+                          "directions" : []
+                        },
+                        {
+                          "name" : "set2 subset3",
+                          "settings" : [],
+                          "directions" : []
+                        }
+                      ]
+                    },
+                    {
+                      "name" : "set3",
+                      "settings" : [],
+                      "directions" : [
+                        {
+                          "name" : "set3 subset1",
+                          "settings" : [],
+                          "directions" : []
+                        },
+                        {
+                          "name" : "set3 subset2",
+                          "settings" : [],
+                          "directions" : []
+                        },
+                        {
+                          "name" : "set3 subset3",
+                          "settings" : [],
+                          "directions" : []
+                        }
+                      ]
+                    },
+                    {
+                      "name" : "set4",
+                      "settings" : [],
+                      "directions" : [
+                        {
+                          "name" : "set4 subset1",
+                          "settings" : [],
+                          "directions" : []
+                        },
+                        {
+                          "name" : "set4 subset2",
+                          "settings" : [],
+                          "directions" : []
+                        },
+                        {
+                          "name" : "set4 subset3",
+                          "settings" : [],
+                          "directions" : []
+                        }
+                      ]
+                    }
+                  ],
+                  "directions" : []
+                }
+              ]
+            },
+            {
+              "name" : "network settings",
+              "settings" : [
+                {
+                  "name" : "set1",
+                  "settings" : [],
+                  "directions" : [
+                    {
+                      "name" : "setting8",
+                      "settings" : [],
+                      "directions" : []
+                    },
+                    {
+                      "name" : "setting9",
+                      "settings" : [],
+                      "directions" : []
+                    },
+                    {
+                      "name" : "setting10",
+                      "settings" : [],
+                      "directions" : []
+                    }
+                  ]
+                },
+                {
+                  "name" : "set2",
+                  "settings" : [],
+                  "directions" : [
+                    {
+                      "name" : "setting8",
+                      "settings" : [],
+                      "directions" : []
+                    },
+                    {
+                      "name" : "setting9",
+                      "settings" : [],
+                      "directions" : []
+                    },
+                    {
+                      "name" : "setting10",
+                      "settings" : [],
+                      "directions" : []
+                    }
+                  ]
+                },
+                {
+                  "name" : "set3",
+                  "settings" : [],
+                  "directions" : [
+                    {
+                      "name" : "setting8",
+                      "settings" : [],
+                      "directions" : []
+                    },
+                    {
+                      "name" : "setting9",
+                      "settings" : [],
+                      "directions" : []
+                    },
+                    {
+                      "name" : "setting10",
+                      "settings" : [],
+                      "directions" : []
+                    }
+                  ]
+                }
+              ],
+              "directions" : []
+            }
+          ]
+        },
+        {
+          "name" : "network2",
+          "settings" : [],
+          "directions" : [
+            {
+              "name" : "kiosk1",
+              "settings" : [],
+              "directions" : [
+                {
+                  "name" : "setting1",
+                  "settings" : [
+                    {
+                      "name" : "set1",
+                      "settings" : [],
+                      "directions" : [
+                        {
+                          "name" : "set1 subset1",
+                          "settings" : [],
+                          "directions" : []
+                        },
+                        {
+                          "name" : "set1 subset2",
+                          "settings" : [],
+                          "directions" : []
+                        },
+                        {
+                          "name" : "set1 subset3",
+                          "settings" : [],
+                          "directions" : []
+                        }
+                      ]
+                    },
+                    {
+                      "name" : "set2",
+                      "settings" : [],
+                      "directions" : [
+                        {
+                          "name" : "set2 subset1",
+                          "settings" : [],
+                          "directions" : []
+                        },
+                        {
+                          "name" : "set2 subset2",
+                          "settings" : [],
+                          "directions" : []
+                        },
+                        {
+                          "name" : "set2 subset3",
+                          "settings" : [],
+                          "directions" : []
+                        }
+                      ]
+                    },
+                    {
+                      "name" : "set3",
+                      "settings" : [],
+                      "directions" : [
+                        {
+                          "name" : "set3 subset1",
+                          "settings" : [],
+                          "directions" : []
+                        },
+                        {
+                          "name" : "set3 subset2",
+                          "settings" : [],
+                          "directions" : []
+                        },
+                        {
+                          "name" : "set3 subset3",
+                          "settings" : [],
+                          "directions" : []
+                        }
+                      ]
+                    },
+                    {
+                      "name" : "set4",
+                      "settings" : [],
+                      "directions" : [
+                        {
+                          "name" : "set4 subset1",
+                          "settings" : [],
+                          "directions" : []
+                        },
+                        {
+                          "name" : "set4 subset2",
+                          "settings" : [],
+                          "directions" : []
+                        },
+                        {
+                          "name" : "set4 subset3",
+                          "settings" : [],
+                          "directions" : []
+                        }
+                      ]
+                    }
+                  ],
+                  "directions" : []
+                },
+                {
+                  "name" : "setting2",
+                  "settings" : [
+                    {
+                      "name" : "set1",
+                      "settings" : [],
+                      "directions" : [
+                        {
+                          "name" : "set1 subset1",
+                          "settings" : [],
+                          "directions" : []
+                        },
+                        {
+                          "name" : "set1 subset2",
+                          "settings" : [],
+                          "directions" : []
+                        },
+                        {
+                          "name" : "set1 subset3",
+                          "settings" : [],
+                          "directions" : []
+                        }
+                      ]
+                    },
+                    {
+                      "name" : "set2",
+                      "settings" : [],
+                      "directions" : [
+                        {
+                          "name" : "set2 subset1",
+                          "settings" : [],
+                          "directions" : []
+                        },
+                        {
+                          "name" : "set2 subset2",
+                          "settings" : [],
+                          "directions" : []
+                        },
+                        {
+                          "name" : "set2 subset3",
+                          "settings" : [],
+                          "directions" : []
+                        }
+                      ]
+                    },
+                    {
+                      "name" : "set3",
+                      "settings" : [],
+                      "directions" : [
+                        {
+                          "name" : "set3 subset1",
+                          "settings" : [],
+                          "directions" : []
+                        },
+                        {
+                          "name" : "set3 subset2",
+                          "settings" : [],
+                          "directions" : []
+                        },
+                        {
+                          "name" : "set3 subset3",
+                          "settings" : [],
+                          "directions" : []
+                        }
+                      ]
+                    },
+                    {
+                      "name" : "set4",
+                      "settings" : [],
+                      "directions" : [
+                        {
+                          "name" : "set4 subset1",
+                          "settings" : [],
+                          "directions" : []
+                        },
+                        {
+                          "name" : "set4 subset2",
+                          "settings" : [],
+                          "directions" : []
+                        },
+                        {
+                          "name" : "set4 subset3",
+                          "settings" : [],
+                          "directions" : []
+                        }
+                      ]
+                    }
+                  ],
+                  "directions" : []
+                }
+              ]
+            },
+            {
+              "name" : "kiosk2",
+              "settings" : [],
+              "directions" : [
+                {
+                  "name" : "setting1",
+                  "settings" : [
+                    {
+                      "name" : "set1",
+                      "settings" : [],
+                      "directions" : [
+                        {
+                          "name" : "set1 subset1",
+                          "settings" : [],
+                          "directions" : []
+                        },
+                        {
+                          "name" : "set1 subset2",
+                          "settings" : [],
+                          "directions" : []
+                        },
+                        {
+                          "name" : "set1 subset3",
+                          "settings" : [],
+                          "directions" : []
+                        }
+                      ]
+                    },
+                    {
+                      "name" : "set2",
+                      "settings" : [],
+                      "directions" : [
+                        {
+                          "name" : "set2 subset1",
+                          "settings" : [],
+                          "directions" : []
+                        },
+                        {
+                          "name" : "set2 subset2",
+                          "settings" : [],
+                          "directions" : []
+                        },
+                        {
+                          "name" : "set2 subset3",
+                          "settings" : [],
+                          "directions" : []
+                        }
+                      ]
+                    },
+                    {
+                      "name" : "set3",
+                      "settings" : [],
+                      "directions" : [
+                        {
+                          "name" : "set3 subset1",
+                          "settings" : [],
+                          "directions" : []
+                        },
+                        {
+                          "name" : "set3 subset2",
+                          "settings" : [],
+                          "directions" : []
+                        },
+                        {
+                          "name" : "set3 subset3",
+                          "settings" : [],
+                          "directions" : []
+                        }
+                      ]
+                    },
+                    {
+                      "name" : "set4",
+                      "settings" : [],
+                      "directions" : [
+                        {
+                          "name" : "set4 subset1",
+                          "settings" : [],
+                          "directions" : []
+                        },
+                        {
+                          "name" : "set4 subset2",
+                          "settings" : [],
+                          "directions" : []
+                        },
+                        {
+                          "name" : "set4 subset3",
+                          "settings" : [],
+                          "directions" : []
+                        }
+                      ]
+                    }
+                  ],
+                  "directions" : []
+                },
+                {
+                  "name" : "setting2",
+                  "settings" : [
+                    {
+                      "name" : "set1",
+                      "settings" : [],
+                      "directions" : [
+                        {
+                          "name" : "set1 subset1",
+                          "settings" : [],
+                          "directions" : []
+                        },
+                        {
+                          "name" : "set1 subset2",
+                          "settings" : [],
+                          "directions" : []
+                        },
+                        {
+                          "name" : "set1 subset3",
+                          "settings" : [],
+                          "directions" : []
+                        }
+                      ]
+                    },
+                    {
+                      "name" : "set2",
+                      "settings" : [],
+                      "directions" : [
+                        {
+                          "name" : "set2 subset1",
+                          "settings" : [],
+                          "directions" : []
+                        },
+                        {
+                          "name" : "set2 subset2",
+                          "settings" : [],
+                          "directions" : []
+                        },
+                        {
+                          "name" : "set2 subset3",
+                          "settings" : [],
+                          "directions" : []
+                        }
+                      ]
+                    },
+                    {
+                      "name" : "set3",
+                      "settings" : [],
+                      "directions" : [
+                        {
+                          "name" : "set3 subset1",
+                          "settings" : [],
+                          "directions" : []
+                        },
+                        {
+                          "name" : "set3 subset2",
+                          "settings" : [],
+                          "directions" : []
+                        },
+                        {
+                          "name" : "set3 subset3",
+                          "settings" : [],
+                          "directions" : []
+                        }
+                      ]
+                    },
+                    {
+                      "name" : "set4",
+                      "settings" : [],
+                      "directions" : [
+                        {
+                          "name" : "set4 subset1",
+                          "settings" : [],
+                          "directions" : []
+                        },
+                        {
+                          "name" : "set4 subset2",
+                          "settings" : [],
+                          "directions" : []
+                        },
+                        {
+                          "name" : "set4 subset3",
+                          "settings" : [],
+                          "directions" : []
+                        }
+                      ]
+                    }
+                  ],
+                  "directions" : []
+                }
+              ]
+            },
+            {
+              "name" : "network settings",
+              "settings" : [
+                {
+                  "name" : "set1",
+                  "settings" : [],
+                  "directions" : [
+                    {
+                      "name" : "setting8",
+                      "settings" : [],
+                      "directions" : []
+                    },
+                    {
+                      "name" : "setting9",
+                      "settings" : [],
+                      "directions" : []
+                    },
+                    {
+                      "name" : "setting10",
+                      "settings" : [],
+                      "directions" : []
+                    }
+                  ]
+                },
+                {
+                  "name" : "set2",
+                  "settings" : [],
+                  "directions" : [
+                    {
+                      "name" : "setting8",
+                      "settings" : [],
+                      "directions" : []
+                    },
+                    {
+                      "name" : "setting9",
+                      "settings" : [],
+                      "directions" : []
+                    },
+                    {
+                      "name" : "setting10",
+                      "settings" : [],
+                      "directions" : []
+                    }
+                  ]
+                },
+                {
+                  "name" : "set3",
+                  "settings" : [],
+                  "directions" : [
+                    {
+                      "name" : "setting8",
+                      "settings" : [],
+                      "directions" : []
+                    },
+                    {
+                      "name" : "setting9",
+                      "settings" : [],
+                      "directions" : []
+                    },
+                    {
+                      "name" : "setting10",
+                      "settings" : [],
+                      "directions" : []
+                    }
+                  ]
+                }
+              ],
+              "directions" : []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
