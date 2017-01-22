@@ -1,14 +1,23 @@
 $(document).ready(function(){
-  getData();
+  navItemsCounter = 0;
+  path = [];
+  navItemsArray = [];
+  setTimeout(function(){
+    getData();
+  }, 500);
 });
 
-var navItem = function(node, label, primary/*, secondary, content*/){
+var navItem = function(id, node, path, tabs, content, isSettingTab){
+  this.id = id;
   this.node = node;
-  this.label = label;
-  this.primary = '<li><a href="#">' + label + '</a></li>'
+  this.path = [];
+  for (i=0; i<path.length; i++) {
+    this.path.push(path[i]);
+  }
+  this.tabs = tabs;
+  this.content = content;
+  this.isSettingTab = isSettingTab;
 };
-
-var navItemsArray = [];
 
 
 function getData(){
@@ -23,25 +32,24 @@ function getData(){
 
 
 function getAllNodes(data){
+  path.push(data.name);
   $.each(data.navigation, function(i, node){
+    navItemsArray.push(new navItem(navItemsCounter, node.name, path, node.settings, node.directions, false));
+    path.pop();
     getNode(node);
   });
 };
 
-path = [];
 function getNode(data){
-  var currentNode;
+  navItemsCounter++;
   path.push(data.name);
   $.each(data.settings, function(i, node){
-    console.log(node.name, path);
-    //var temp = navItem(node.name, node.name, path);
-    //navItemsArray.push(temp);
+    navItemsArray.push(new navItem(navItemsCounter, node.name, path, node.settings, node.directions, true));
     getNode(node);
   });
   $.each(data.directions, function(i, node){
-    console.log(node.name, path);
-    //var temp = navItem(node.name, node.name, path);
-    //navItemsArray.push(temp);
+    navItemsArray.push(new navItem(navItemsCounter, node.name, path, node.settings, node.directions, false));
+    //console.log(node.name, path, node.settings, node.directions);
     getNode(node);
   });
   path.pop();
