@@ -1,6 +1,7 @@
+path = [];
+navItemsArray = [];
+
 $(document).ready(function(){
-  path = [];
-  navItemsArray = [];
   getData();
 });
 
@@ -45,9 +46,7 @@ function getAllNodes(data){
 function getNode(data){
   path.push(data.id);
   $.each(data.settings, function(i, node){
-    //path.push(node.id);
     navItemsArray.push(new navItem(node.id, node.name, path, node.settings, node.directions, true, node.additionalClass));
-    //path.pop();
     getNode(node);
   });
   $.each(data.directions, function(i, node){
@@ -85,9 +84,15 @@ function optionsList(options){
 
 function contentList(content){
   var html = '';
+  var additionalClass = '';
   for(i=0; i<content.length; i++) {
+    if ( content[i].additionalClass != undefined ) {
+      additionalClass = content[i].additionalClass + ' ';
+    } else {
+      additionalClass = '';
+    }
     html +=
-      '<button class="' + content[i].additionalClass + ' navigationTrigger white-button setting-options__button" data-id="' + content[i].id + '">'
+      '<button class="' + additionalClass + 'navigationTrigger white-button setting-options__button" data-id="' + content[i].id + '">'
       + content[i].name
       + '</button>';
   }
@@ -95,7 +100,6 @@ function contentList(content){
 };
 
 function display(queryId){
-  //var current = navItemsArray[queryId];
   var current = $.grep(navItemsArray, function(e){ return e.id == queryId; })[0];
   if ( current.content.length > 0 || current.tabs.length > 0 ) {
     $('#content_name').text(current.node);

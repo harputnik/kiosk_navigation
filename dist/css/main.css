@@ -9,6 +9,7 @@ body {
   background-color: #eeeeee;
   width: 100%;
   overflow-x: hidden;
+  min-width: 360px;
 }
 .wrapper {
   min-height: 100%;
@@ -223,6 +224,7 @@ button {
 .top-bar .dropdown-toggle {
   background-color: #568c19;
   cursor: pointer;
+  height: 30px;
   padding: 0 15px;
   font-weight: 600;
   -webkit-box-shadow: inset 2px 0px 5px 0px rgba(0, 0, 0, 0.15);
@@ -233,6 +235,7 @@ button {
 @media screen and (max-width: 768px) {
   .top-bar .dropdown-toggle {
     width: 50%;
+    height: 24px;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -366,6 +369,7 @@ button {
   background-image: url('../media/avatar.png');
   background-position: center center;
   background-size: 130%;
+  margin-top: -4px;
 }
 @media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
   .app-nav .primary-nav .user-actions .user .avatar {
@@ -376,6 +380,7 @@ button {
   .app-nav .primary-nav .user-actions .user .avatar {
     width: 26px;
     height: 26px;
+    margin-top: 0;
     line-height: 38.4px;
   }
 }
@@ -509,10 +514,17 @@ button {
 .app-nav .primary-nav .navigation-list ul li:last-child a {
   font-weight: 600;
 }
+.app-nav .primary-nav .navigation-list ul li:last-child a:after {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-color: transparent transparent transparent white;
+}
 .app-nav .primary-nav .navigation-list ul li.has_secondary {
   background-color: black;
   margin-left: 10px;
-  margin-bottom: -1px;
+  margin-bottom: -2px;
 }
 .app-nav .primary-nav .navigation-list ul li.has_secondary a:after {
   display: none;
@@ -620,7 +632,7 @@ button {
   float: right;
   margin-right: 40px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .app-content .setting-options__button.pull-right {
     float: none;
     margin-right: 0;

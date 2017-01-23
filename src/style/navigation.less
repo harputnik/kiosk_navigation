@@ -49,12 +49,14 @@
   .dropdown-toggle {
     background-color: @dark-green;
     cursor: pointer;
+    height: @topbar-height;
     padding: 0 15px;
     font-weight: 600;
     .box-shadow(inset 2px 0px 5px 0px rgba(0,0,0,0.15));
     transition: background-color 0.4s;
     @media screen and (max-width: @tablet-breakpoint) {
       width: 50%;
+      height: 0.8*@topbar-height;
       position: absolute;
       bottom: 0;
       left: 0;
@@ -157,12 +159,14 @@
           background-image: url('../media/avatar.png');
           background-position: center center;
           background-size: 130%;
+          margin-top: -4px;
           @media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
             background-image: url('../media/avatar@2x.png');
           }
           @media screen and (max-width: @tablet-breakpoint) {
             width: 26px;
             height: 26px;
+            margin-top: 0;
             line-height: 0.6*@midbar-height;
           }
         }
@@ -276,6 +280,9 @@
           &:last-child {
             a {
               font-weight: 600;
+              &:after {
+                .triangle-right(white, 5px);
+              }
             }
           }
           &.has_secondary {
