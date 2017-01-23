@@ -30,6 +30,7 @@
     text-transform: uppercase;
     line-height: @topbar-height;
     display: inline-block;
+    vertical-align: middle;
     padding: 0 20px;
     @media screen and (max-width: @tablet-breakpoint) {
       line-height: 0.8*@topbar-height;
@@ -58,6 +59,9 @@
       bottom: 0;
       left: 0;
     }
+    @media screen and (max-width: @mobile-breakpoint) {
+      font-size: @fontsize-tiny;
+    }
     &.kiosks-dropdown {
       @media screen and (max-width: @tablet-breakpoint) {
         left: 50%;
@@ -68,6 +72,8 @@
       color: @dark-green;
       background-color: white;
       display: inline-block;
+      vertical-align: middle;
+      margin-top: -3.5px;
       padding: 0 6px;
       line-height: 12px;
       margin-left: 6px;
@@ -77,6 +83,7 @@
     &:after {
       content: '';
       display: inline-block;
+      vertical-align: middle;
       margin-left: 6px;
       .triangle-down (white, 4px);
       position: relative;
@@ -131,12 +138,13 @@
       }
       .user {
         display: inline-block;
+        vertical-align: top;
         line-height: @midbar-height;
         vertical-align: middle;
         @media screen and (max-width: @tablet-breakpoint) {
           float: left;
           margin-left: 20px;
-          line-height: 0.6*@midbar-height;
+          line-height: 0.5*@midbar-height;
         }
         .avatar {
           .border-radius(50%);
@@ -161,6 +169,7 @@
         .username {
           color: white;
           display: inline-block;
+          vertical-align: middle;
           padding: 0 15px;
           line-height: @midbar-height;
           vertical-align: middle;
@@ -174,8 +183,8 @@
       }
       .settings {
         display: inline-block;
+        vertical-align: top;
         line-height: @midbar-height;
-        vertical-align: middle;
         height: @midbar-height;
         width: @midbar-height;
         background-color: @smoke;
@@ -219,13 +228,18 @@
     }
     .navigation-list {
       float: left;
+      @media screen and (max-width: @tablet-breakpoint) {
+        padding-left: 10px;
+      }
       ul {
         li {
           text-transform: uppercase;
           color: white;
           display: inline-block;
+          vertical-align: top;
           line-height: @midbar-height;
           vertical-align: middle;
+          white-space:nowrap;
           @media screen and (max-width: @tablet-breakpoint) {
             line-height: 0.6*@midbar-height;
           }
@@ -245,6 +259,7 @@
             &:after {
               content: '';
               display: inline-block;
+              vertical-align: top;
               .triangle-right(@dust, 5px);
               position: absolute;
               right: 0;
@@ -261,15 +276,17 @@
           &:last-child {
             a {
               font-weight: 600;
-              &:after {
-                display: none;
-              }
             }
           }
           &.has_secondary {
             background-color: black;
             margin-left: 10px;
-            margin-bottom: -1px;
+            margin-bottom: -2px;
+            a {
+              &:after {
+                display: none;
+              }
+            }
           }
         }
       }
@@ -283,11 +300,16 @@
       height: 0.6*@bottombar-height;
       line-height: 0.6*@bottombar-height;
     }
+    @media screen and (max-width: @mobile-breakpoint) {
+      padding-left: 15px;
+    }
     ul {
       li {
         display: inline-block;
+        vertical-align: top;
         height: @bottombar-height;
         line-height: @bottombar-height;
+        white-space:nowrap;
         @media screen and (max-width: @tablet-breakpoint) {
           height: 0.6*@bottombar-height;
           line-height: 0.6*@bottombar-height;
@@ -301,10 +323,14 @@
           line-height: 26px;
           font-size: @fontsize-small-regular;
           text-transform: uppercase;
+          margin-top: -4px;
           @media screen and (max-width: @tablet-breakpoint) {
             height: 0.4*@bottombar-height;
             line-height: 0.4*@bottombar-height;
             font-size: @fontsize-small;
+          }
+          @media screen and (max-width: @mobile-breakpoint) {
+            padding: 0 5px;
           }
         }
         &:last-child {

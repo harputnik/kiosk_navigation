@@ -1,4 +1,4 @@
-.settings {
+.app-content {
   h2 {
     font-size: @fontsize-huge;
     padding: 24px 0;
@@ -11,8 +11,20 @@
     float: left;
     margin-right: 12px;
     margin-bottom: 12px;
+    @media screen and (max-width: @mobile-breakpoint) {
+      width: 100%;
+      text-align: center;
+    }
     &.pull-right {
       float: right;
+      margin-right: 40px;
+      @media screen and (max-width: @mobile-breakpoint) {
+        float: none;
+        margin-right: 0;
+      }
     }
+  }
+  @media screen and (max-width: @mobile-breakpoint) {
+    margin-right: 20px;
   }
 }

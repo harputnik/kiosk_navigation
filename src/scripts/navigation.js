@@ -61,10 +61,12 @@ function getNode(data){
 
 function pathList(path){
   var html = '';
+  var current;
   for(i=0; i<path.length; i++) {
+    current = $.grep(navItemsArray, function(e){ return e.id == path[i]; })[0];
     html +=
-      '<li><a class="navigationTrigger" href="" data-id="' + navItemsArray[path[i]].id + '">'
-      + navItemsArray[path[i]].node
+      '<li><a class="navigationTrigger" href="" data-id="' + current.id + '">'
+      + current.node
       + '</a></li>';
   }
   return html;
@@ -93,13 +95,13 @@ function contentList(content){
 };
 
 function display(queryId){
-  var current = navItemsArray[queryId];
-
+  //var current = navItemsArray[queryId];
+  var current = $.grep(navItemsArray, function(e){ return e.id == queryId; })[0];
   if ( current.content.length > 0 || current.tabs.length > 0 ) {
     $('#content_name').text(current.node);
     $('#content').html(contentList(current.content));
     if( !current.isSettingTab ) {
-      $('#primary').html(pathList(navItemsArray[queryId].path));
+      $('#primary').html(pathList(current.path));
       $('#settingsTabs').html(optionsList(current.tabs));
       if ($('#settingsTabs').is(':empty')){
         $('.secondary-nav').slideUp();

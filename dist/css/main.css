@@ -7,14 +7,27 @@ body {
   height: 100%;
   margin: 0;
   background-color: #eeeeee;
+  width: 100%;
+  overflow-x: hidden;
 }
 .wrapper {
   min-height: 100%;
-  margin-bottom: -60px;
+  margin-bottom: -61px;
+}
+@media screen and (max-width: 480px) {
+  .wrapper {
+    margin-bottom: -31px;
+  }
 }
 .footer,
 .push {
   height: 60px;
+}
+@media screen and (max-width: 480px) {
+  .footer,
+  .push {
+    height: 30px;
+  }
 }
 h1,
 h2,
@@ -42,11 +55,12 @@ button {
   border: none;
   outline: none;
 }
+.clear {
+  overflow: visible;
+}
 .clear:after {
-  content: " ";
-  visibility: hidden;
-  display: block;
-  height: 0;
+  content: "";
+  display: table;
   clear: both;
 }
 .grid-container {
@@ -71,7 +85,7 @@ button {
   font-size: 13px;
   font-weight: 600;
   width: 170px;
-  padding-left: 15px;
+  padding: 0 15px;
   text-align: left;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -186,6 +200,7 @@ button {
   text-transform: uppercase;
   line-height: 30px;
   display: inline-block;
+  vertical-align: middle;
   padding: 0 20px;
 }
 @media screen and (max-width: 768px) {
@@ -223,6 +238,11 @@ button {
     left: 0;
   }
 }
+@media screen and (max-width: 480px) {
+  .top-bar .dropdown-toggle {
+    font-size: 10px;
+  }
+}
 @media screen and (max-width: 768px) {
   .top-bar .dropdown-toggle.kiosks-dropdown {
     left: 50%;
@@ -238,6 +258,8 @@ button {
   color: #568c19;
   background-color: white;
   display: inline-block;
+  vertical-align: middle;
+  margin-top: -3.5px;
   padding: 0 6px;
   line-height: 12px;
   margin-left: 6px;
@@ -247,6 +269,7 @@ button {
 .top-bar .dropdown-toggle:after {
   content: '';
   display: inline-block;
+  vertical-align: middle;
   margin-left: 6px;
   width: 0;
   height: 0;
@@ -316,6 +339,7 @@ button {
 }
 .app-nav .primary-nav .user-actions .user {
   display: inline-block;
+  vertical-align: top;
   line-height: 64px;
   vertical-align: middle;
 }
@@ -323,7 +347,7 @@ button {
   .app-nav .primary-nav .user-actions .user {
     float: left;
     margin-left: 20px;
-    line-height: 38.4px;
+    line-height: 32px;
   }
 }
 .app-nav .primary-nav .user-actions .user .avatar {
@@ -372,8 +396,8 @@ button {
 }
 .app-nav .primary-nav .user-actions .settings {
   display: inline-block;
+  vertical-align: top;
   line-height: 64px;
-  vertical-align: middle;
   height: 64px;
   width: 64px;
   background-color: #292929;
@@ -423,12 +447,19 @@ button {
 .app-nav .primary-nav .navigation-list {
   float: left;
 }
+@media screen and (max-width: 768px) {
+  .app-nav .primary-nav .navigation-list {
+    padding-left: 10px;
+  }
+}
 .app-nav .primary-nav .navigation-list ul li {
   text-transform: uppercase;
   color: white;
   display: inline-block;
+  vertical-align: top;
   line-height: 64px;
   vertical-align: middle;
+  white-space: nowrap;
 }
 @media screen and (max-width: 768px) {
   .app-nav .primary-nav .navigation-list ul li {
@@ -454,6 +485,7 @@ button {
 .app-nav .primary-nav .navigation-list ul li a:after {
   content: '';
   display: inline-block;
+  vertical-align: top;
   width: 0;
   height: 0;
   border-style: solid;
@@ -477,13 +509,13 @@ button {
 .app-nav .primary-nav .navigation-list ul li:last-child a {
   font-weight: 600;
 }
-.app-nav .primary-nav .navigation-list ul li:last-child a:after {
-  display: none;
-}
 .app-nav .primary-nav .navigation-list ul li.has_secondary {
   background-color: black;
   margin-left: 10px;
   margin-bottom: -1px;
+}
+.app-nav .primary-nav .navigation-list ul li.has_secondary a:after {
+  display: none;
 }
 .app-nav .secondary-nav {
   background-color: black;
@@ -496,10 +528,17 @@ button {
     line-height: 30px;
   }
 }
+@media screen and (max-width: 480px) {
+  .app-nav .secondary-nav {
+    padding-left: 15px;
+  }
+}
 .app-nav .secondary-nav ul li {
   display: inline-block;
+  vertical-align: top;
   height: 50px;
   line-height: 50px;
+  white-space: nowrap;
 }
 @media screen and (max-width: 768px) {
   .app-nav .secondary-nav ul li {
@@ -516,12 +555,18 @@ button {
   line-height: 26px;
   font-size: 13px;
   text-transform: uppercase;
+  margin-top: -4px;
 }
 @media screen and (max-width: 768px) {
   .app-nav .secondary-nav ul li a {
     height: 20px;
     line-height: 20px;
     font-size: 12px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .app-nav .secondary-nav ul li a {
+    padding: 0 5px;
   }
 }
 .app-nav .secondary-nav ul li:last-child a {
@@ -531,29 +576,58 @@ button {
   height: 60px;
   border-top: 1px solid #d5d5d5;
 }
+@media screen and (max-width: 480px) {
+  .footer-content {
+    height: 30px;
+  }
+}
 .footer-content p {
   padding: 20px 0 0 20px;
   color: #818181;
   font-size: 14px;
 }
+@media screen and (max-width: 480px) {
+  .footer-content p {
+    padding: 10px 0 0 20px;
+    font-size: 10px;
+  }
+}
 .footer-content p a {
   color: #3a3a3a;
 }
-.settings h2 {
+.app-content h2 {
   font-size: 36px;
   padding: 24px 0;
   text-transform: capitalize;
 }
 @media screen and (max-width: 768px) {
-  .settings h2 {
+  .app-content h2 {
     font-size: 21.6px;
   }
 }
-.settings .setting-options__button {
+.app-content .setting-options__button {
   float: left;
   margin-right: 12px;
   margin-bottom: 12px;
 }
-.settings .setting-options__button.pull-right {
+@media screen and (max-width: 480px) {
+  .app-content .setting-options__button {
+    width: 100%;
+    text-align: center;
+  }
+}
+.app-content .setting-options__button.pull-right {
   float: right;
+  margin-right: 40px;
+}
+@media screen and (max-width: 480px) {
+  .app-content .setting-options__button.pull-right {
+    float: none;
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .app-content {
+    margin-right: 20px;
+  }
 }
