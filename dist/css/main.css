@@ -511,6 +511,9 @@ button {
     padding-left: 10px;
   }
 }
+.app-nav .primary-nav .navigation-list ul {
+  white-space:nowrap;
+}
 .app-nav .primary-nav .navigation-list ul li {
   text-transform: uppercase;
   color: white;
@@ -623,6 +626,9 @@ button {
   font-size: 13px;
   text-transform: uppercase;
   margin-top: -4px;
+}
+.app-nav .secondary-nav ul {
+  white-space:nowrap;
 }
 @media screen and (max-width: 768px) {
   .app-nav .secondary-nav ul li a {
