@@ -34,3 +34,11 @@ master is a distribution branch, without tools and packages. To check project de
 # REQUIREMENTS #
 
 whole navigation depends on a json file describing the paths tree, so it requires a server to work. (node, wamp, lamp or any kind)
+
+
+
+---------------------------------------------------------------
+
+# DEMO #
+
+http://smialy.bdl.pl/kiosk/nav_with_loaded_data.html
