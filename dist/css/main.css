@@ -9,7 +9,7 @@ body {
   background-color: #eeeeee;
   width: 100%;
   overflow-x: hidden;
-  min-width: 360px;
+  min-width: 320px;
 }
 .wrapper {
   min-height: 100%;
@@ -108,7 +108,50 @@ button {
   -moz-box-shadow: none;
   box-shadow: none;
 }
+.dropdown-holder {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-holder .dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #568c19;
+  width: 100%;
+  min-width: 145px;
+}
+.dropdown-holder .dropdown li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.dropdown-holder .dropdown li a {
+  color: white;
+  height: 32px;
+  display: block;
+  line-height: 32px;
+  border-bottom: 1px solid #6c8f43;
+  box-sizing: border-box;
+  padding: 0 12px;
+  text-transform: uppercase;
+  text-align: left;
+  font-weight: 600;
+  font-size: 12px;
+}
+@media screen and (max-width: 480px) {
+  .dropdown-holder .dropdown li a {
+    font-size: 10px;
+  }
+}
+.dropdown-holder .dropdown li a:hover {
+  background-color: #477314;
+}
+.dropdown-holder .dropdown li:last-child a {
+  border-bottom: none;
+}
 .spinner-overlay {
+  z-index: 100;
   background-color: #eeeeee;
   position: fixed;
   left: 0;
@@ -175,6 +218,7 @@ button {
   }
 }
 .top-bar {
+  z-index: 10;
   background-color: #65a51d;
   height: 30px;
   position: relative;
@@ -221,6 +265,23 @@ button {
     font-size: 10px;
   }
 }
+.top-bar .dropdown-holder {
+  height: 30px;
+}
+@media screen and (max-width: 768px) {
+  .top-bar .dropdown-holder {
+    width: 50%;
+    height: 24px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .top-bar .dropdown-holder.kiosks-dropdown {
+    left: 50%;
+  }
+}
 .top-bar .dropdown-toggle {
   background-color: #568c19;
   cursor: pointer;
@@ -234,21 +295,13 @@ button {
 }
 @media screen and (max-width: 768px) {
   .top-bar .dropdown-toggle {
-    width: 50%;
+    width: 100%;
     height: 24px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
   }
 }
 @media screen and (max-width: 480px) {
   .top-bar .dropdown-toggle {
     font-size: 10px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .top-bar .dropdown-toggle.kiosks-dropdown {
-    left: 50%;
   }
 }
 .top-bar .dropdown-toggle .network-counter {
@@ -288,7 +341,8 @@ button {
     top: 10px;
   }
 }
-.top-bar .dropdown-toggle:hover {
+.top-bar .dropdown-toggle:hover,
+.top-bar .dropdown-toggle.active {
   background-color: #477314;
 }
 .top-bar .pill-button {
@@ -509,10 +563,11 @@ button {
   height: 0;
   border-style: solid;
   border-width: 5px 0 5px 5px;
-  border-color: transparent transparent transparent #818181;
+  border-color: transparent transparent transparent white;
 }
 .app-nav .primary-nav .navigation-list ul li:last-child a {
   font-weight: 600;
+  color: white;
 }
 .app-nav .primary-nav .navigation-list ul li:last-child a:after {
   width: 0;
@@ -580,6 +635,13 @@ button {
   .app-nav .secondary-nav ul li a {
     padding: 0 5px;
   }
+}
+.app-nav .secondary-nav ul li a:hover:not(.active) {
+  color: #65a51d;
+}
+.app-nav .secondary-nav ul li a.active {
+  font-weight: 600;
+  color: white;
 }
 .app-nav .secondary-nav ul li:last-child a {
   border-right: none;

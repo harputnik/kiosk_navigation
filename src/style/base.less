@@ -9,7 +9,7 @@ html, body {
   background-color: @pale;
   width: 100%;
   overflow-x: hidden;
-  min-width: 360px;
+  min-width: 320px;
 }
 
 .wrapper {
@@ -93,7 +93,51 @@ button {
   }
 }
 
+.dropdown-holder {
+  position: relative;
+  display: inline-block;
+  .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: @dark-green;
+    width: 100%;
+    min-width: 145px;
+    li {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      a {
+        color: white;
+        height: 32px;
+        display: block;
+        line-height: 32px;
+        border-bottom: 1px solid #6c8f43;
+        box-sizing: border-box;
+        padding: 0 12px;
+        text-transform: uppercase;
+        text-align: left;
+        font-weight: 600;
+        font-size: @fontsize-small;
+        @media screen and (max-width: @mobile-breakpoint) {
+          font-size: @fontsize-tiny;
+        }
+        &:hover {
+          background-color: @khaki;
+        }
+      }
+      &:last-child {
+        a {
+          border-bottom: none;
+        }
+      }
+    }
+  }
+}
+
 .spinner-overlay {
+  z-index: 100;
   background-color: @pale;
   position: fixed;
   left: 0;

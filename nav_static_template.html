@@ -14,17 +14,35 @@
           <div class="clear">
             <div class="left-align left-bar">
               <h1 class="current-location app-header__item">social&nbsp;bicycles&nbsp;/&nbsp;<span>kiosk&nbsp;backend</span></h1>
-              <button class="dropdown-toggle app-header__item kiosks-dropdown">
-                network&nbsp;name&nbsp;<span class="network-counter">24</span>
-              </button>
+              <span class="dropdown-holder">
+                <button class="dropdown-toggle app-header__item">
+                  network&nbsp;name&nbsp;<span class="network-counter">24</span>
+                </button>
+                <ul class="dropdown">
+                  <li><a href="#">network 1</a></li>
+                  <li><a href="#">network 2</a></li>
+                  <li><a href="#">network 4</a></li>
+                  <li><a href="#">network 8</a></li>
+                  <li><a href="#">network 16</a></li>
+                </ul>
+              </span>
             </div>
             <div class="right-align right-bar">
               <a href="#report_a_problem" class="pill-button app-header__item">
                 report&nbsp;a&nbsp;problem
               </a>
-              <button class="dropdown-toggle app-header__item">
-                sobi&nbsp;kiosks
-              </button>
+              <span class="dropdown-holder kiosks-dropdown">
+                <button class="dropdown-toggle app-header__item">
+                  sobi&nbsp;kiosks
+                </button>
+                <ul class="dropdown">
+                  <li><a href="#">sobi admin</a></li>
+                  <li><a href="#">sobi data</a></li>
+                  <li><a href="#">sobi kiosks</a></li>
+                  <li><a href="#">sobi cms</a></li>
+                  <li><a href="#">sobi playbook</a></li>
+                </ul>
+              </span>
             </div>
           </div>
         </div>
@@ -55,7 +73,7 @@
           <div class="secondary-nav">
             <div class="clear">
               <ul id="settingsTabs">
-                <li><a href="#">Setting1</a></li>
+                <li><a href="#" class="active">Setting1</a></li>
                 <li><a href="#">Setting2</a></li>
                 <li><a href="#">Setting3</a></li>
                 <li><a href="#">Setting4</a></li>
