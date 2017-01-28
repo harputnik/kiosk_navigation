@@ -334,6 +334,7 @@ button {
   border-color: white transparent transparent transparent;
   position: relative;
   top: -2px;
+  transition: transform 0.6s;
 }
 @media screen and (max-width: 768px) {
   .top-bar .dropdown-toggle:after {
@@ -344,6 +345,11 @@ button {
 .top-bar .dropdown-toggle:hover,
 .top-bar .dropdown-toggle.active {
   background-color: #477314;
+}
+.top-bar .dropdown-toggle.active:after {
+  -webkit-transform: scaleY(-1);
+  -ms-transform: scaleY(-1);
+  transform: scaleY(-1);
 }
 .top-bar .pill-button {
   -webkit-border-radius: 9px;
